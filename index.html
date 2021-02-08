@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        .preloader {
+            background: #6541c1;
+            background: -webkit-gradient(left top, right top, color-stop(0%, #6541c1), color-stop(98%, #d43396), color-stop(100%, #d43396));
+            background: -webkit-gradient(linear, left top, right top, from(#6541c1), color-stop(98%, #d43396), to(#d43396));
+            background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6541c1', endColorstr='#d43396', GradientType=1);
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999999;
+        }
+        .preloader .spinner {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -30px;
+            margin-left: -30px;
+            background-color: #fff;
+            border-radius: 100%;
+            -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+            animation: sk-scaleout 1.0s infinite ease-in-out;
+        }
+    @-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}</style>
+    <!-- Bootstrap CSS -->
+ <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+   <link rel="stylesheet" href="css/styl.css">
+    <title>EasyGifts App</title>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<div class="preloader"><div class="spinner"></div></div>
+
+
+<header id="home" class="clearfix">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex">
+            <div class="row">
+                <img src="images/logo.svg" class="navbar-brand" height="75px" alt="">
+                <button class="navbar-toggler pull-right" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#howItWorks">How EasyGifts Work</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#showcase">App ScreenShots</a></li>
+                </ul>
+            </div>
+            <div class="dropdown float-right">
+                <button class="btn btn-default dropdown-toggle bg-light btn-sm" type="button" data-toggle="dropdown">
+                    <span class="fa fa-globe"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="index.html">English</a></li>
+                    <li class="dropdown-item"><a href="index_ar.html">العربية</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="slogan" class="row">
+            <div class="col-md-7 col-sm-12">
+                <h1>EasyGift App</h1>
+                <p class="text-justify">
+                    EasyGift is the First Complete Gifting Application in the Kingdom of Saudi Arabia Which Combines More than 200+ Gifts of Diverse World Renounced Brands on a Single Platform that Saves You the Searching Efforts for the Perfect Gift In All Times and Occasions.
+                </p>
+                <a href="https://play.google.com/store/apps/details?id=com.easygift" class="btn-download active"><span>Download App</span></a>
+                <a href="#showcase" class="btn-download bordered js-scroll-trigger"><span>Discover App</span></a>
+            </div>
+            <div class="col-md-5 d-none d-md-flex" id="header_iphone_container">
+                <div id="header_iphone"></div>
+                <div class="header_ribbon" id="header_ribbon_1"></div>
+                <div class="header_ribbon" id="header_ribbon_2"></div>
+            </div>
+        </section>
+    </div>
+</header>
+
+
+<div class="container">
+    <div id="stats" class="row">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="usersStat">9,234</span> Users</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="downloadStat">1,000</span> Download</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="likesStat">1,940</span> Likes</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="starsStat">1,834</span> 5 star Rating</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+    </div>
+
+</div>
+
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-purple" id="mainNav">
+    <div class="container">
+
+        <img src="images/logo-white.svg" class="navbar-brand" height="50px" alt="">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse2">
+            <ul class="navbar-nav mr-auto ml-auto">
+                <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#howItWorks">How EasyGifts Work</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#showcase">App ScreenShots</a></li>
+            </ul>
+        </div>
+        <div class="dropdown float-right">
+        <button class="btn btn-default dropdown-toggle bg-light btn-sm" type="button" data-toggle="dropdown">
+            <span class="fa fa-globe"></span></button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="index.html">English</a></li>
+            <li class="dropdown-item"><a href="index_ar.html">العربية</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+
+<section id="features">
+<div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center">Awesome App Features</h1>
+                <p class="text-center">
+                    EasyGift is The first fully integrated gifting application in the kingdom of
+                    saudi arabia witch combines more than 200 gifts from world renounced brands from a unified platform
+                    Which Saves You the efforts of searching for the perfect gift for all times and occasions.
+                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="featuresCarousel" class="text-center">
+                    <div>
+                        <div>
+                            <img class="img-fluid" width="20%" src="images/simple_interfaces_icon.svg"/>
+                            <h5 class="carousel-heading">Easy Interface</h5>
+                            <small class="carousel-text">EasyGift App Features Special and Simple Interfaces which Helps in Choosing Your Gift Easily.
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/diverse_gifts_icon.svg"/>
+                            <h5 class="carousel-heading">Diverse Items</h5>
+                            <small class="carousel-text">It Contains a Large Collection of a Luxurious World Renounced Brands
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/gift_cards_icon.svg"/>
+                            <h5 class="carousel-heading">Gifting Cards</h5>
+                            <small class="carousel-text">EasyGift App Allows You to Add a Luxuriously Designed Gifting Card to the Gift
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/fast_delivery_icon.svg"/>
+                            <h5 class="carousel-heading">Express Delivery</h5>
+                            <small class="carousel-text">EasyGift App Has Multiple Delivery Options (Normal, Express) to All around the Kingdom in Which You Can Choose From
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/creative_wrapping_icon.svg"/>
+                            <h5 class="carousel-heading">Creative Wrappings</h5>
+                            <small class="carousel-text">EasyGift App Features High Quality, Creative and Unorthodox Wrappings
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/secured_payment.svg"/>
+                            <h5 class="carousel-heading">Secure Payment System</h5>
+                            <small class="carousel-text">We Do Provide Secure Payment Services through Visa, MasterCard and MADA
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+</div>
+    </section>
+
+
+<section id="howItWorks">
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="row" id="toggleCarousel">
+            <div class="col-lg-4 offset-lg-1 col-md-4 offset-md-0 col-sm-8 offset-sm-2 maskContainer">
+                <div class="mask">
+                    <div class="canvas">
+                        <div class="page step_1"></div>
+                        <div class="page step_2"></div>
+                        <div class="page step_3"></div>
+                    </div>
+                </div>
+                <img src="images/iphonex-frame.png">
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 offset-md-2 offset-lg-1 right">
+                <h3 style="color: #3F3F3F; padding-bottom: 15px;">How EasyGift Works</h3>
+                <div class="iphoneSliderNavigation selected" id="art1" data-distance="1">
+                    <div class="icon-container ">
+                        <img src="images/select_your_gift_icon_light.svg" class="img-fluid ico light" alt="">
+                        <img src="images/select_your_gift_icon.svg" class="img-fluid ico dark" alt="">
+                    </div>
+
+                    <h5>Choose the Perfect Gift</h5>
+                </div>
+                <div class="iphoneSliderNavigation" id="art2" data-distance="2">
+                    <div class="icon-container"><img src="images/add_the_message_icon.svg" class="dark img-fluid ico wider" alt="">
+                        <img src="images/add_the_message_icon_light.svg" class="img-fluid ico wider light" alt=""></div>
+                    <h5>Add the Message You Want with the Gift</h5>
+                </div>
+                <div class="iphoneSliderNavigation" id="art3" data-distance="3">
+                    <div class="icon-container"><img src="images/select_the_recipient_icon.svg" class="dark img-fluid ico" alt="">
+                        <img src="images/select_the_recipient_icon_light.svg" class="img-fluid ico light" alt=""></div>
+                    <h5>Determine the Contact Person in an Easy and Simple Steps</h5>
+                </div>
+                <a href="https://itunes.apple.com/us/app/easygifts/id1330770578?ls=1&mt=8" class="btn-download store active">
+                    <i class="fab fa-apple"></i>
+                    <span class="inner">
+                            <span class="avail">احصل عليه من</span>
+                            <span class="store-name">App Store</span>
+                        </span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.easygift" class="btn-download store bordered">
+                    <i class="fab fa-google-play"></i>
+                    <span class="inner">
+                            <span class="avail">احصل عليه من</span>
+                            <span class="store-name">Google Play</span>
+                        </span>
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <div style="cursor:pointer" data-toggle="modal" data-src="https://www.youtube.com/embed/ScMzIvxBSi4" data-target="#videoModal"
+         id="video_placeholder">
+        <div class="container text-center">
+            <h2>Watch a Quick Tutorial</h2>
+            <a href="#" class="hvr-pulse">
+                <i class="fa fa-play"></i></a>
+        </div>
+    </div>
+</section>
+
+
+<section id="showcase" class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-center">Apps ScreenShots</h1>
+            <p class="text-center">Because We Do Appreciate the Value of Your time, we Use Simple And Easy Interfaces From the Point of Registry Till Sending Your Gift , Now You Can Choose and Send Your Gift Within 60 Seconds Anywhere Around the Kingdom Of Saudi Arabia</p>
+        </div>
+    </div>
+
+    <div class="row appScreenshotCarousel-container swiper-container ">
+        <div class="screen-mobile-image"></div>
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background:url(images/slider-1.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-2.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-3.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-4.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-5.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-6.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-7.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-8.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-9.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-10.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-11.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-12.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-13.png) no-repeat; background-position: center;"></div>
+            <div class="swiper-slide" style="background:url(images/slider-14.png) no-repeat; background-position: center;"></div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/logo-white.svg" alt="" class="img-fluid d-block" width="25%">
+                <small>EasyGift is The first fully integrated gifting application in the kingdom of
+                    saudi arabia.</small>
+                <small><a href="#" id="termsLink" data-toggle="modal" data-target="#termsModal" style="text-decoration: underline; color:white">Terms & Conditions</a></small>
+            </div>
+            <div class="col-sm-3">
+                <p>Address <br>
+                    <small>Phone: +966 539 733 332 <br>
+                        Email: hallo@easygift.com <br>
+                        Address: Saudi Arabia, Riyadh <br></small>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <form action="#" class="subscribe-form clearfix">
+                    <div class="left-content    clearfix">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" class="" placeholder="example@mail.com">
+                    </div><!-- /.left-content -->
+                    <div class="right-content float-right clearfix">
+                        <button class="btn-download" type="submit"><span>Subscribe Now</span></button>
+                    </div><!-- /.right-content -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <hr style="border-color: #fff">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/easygift.app.14/" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/easygiftsapp" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/101286917975478865626" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                    <li><a href="https://www.Linkedin.com/company/easygiftsapp/" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.snapchat.com/add/easygiftsapp/" class="icoGoogle" title="Snapchat"><i class="fab fa-snapchat"></i></a></li>
+                    <li><a href="https://www.instagram.com/easygiftsapp/" class="icoLinkedin" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/966539733332" class="icoGoogle" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <p class="float-right" style="font-weight: lighter">&copy; All Rights Reserved EasyGift.net</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+            <div class="modal-body">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+            <div class="modal-body">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                    <h4 class="modal-title">Conditions of Privacy Policy</h4>
+                </div>
+                <!-- 16:9 aspect ratio -->
+                <div style="padding: 10px; max-height: 300px; overflow: auto"  class="modal-content">
+                    <p>Conditions of privacy policy only apply to the information collected from internet through our website as indicated herein in item No. (1) while these conditions do not apply to the information collected in no internet communication situation.</p>
+                    <p>By using our electronic site you will be considered accepted conditions of privacy policy stated in this document without any amendments.</p>
+                    <p>Information collected by the service:</p>
+                    <ul>
+                        <li>(*) company in the Kingdom of Saudi Arabia operates the electronic site named (*) ("the site"). The conditions of privacy policy ("the conditions") state that you should be informed in your capacity as a "user" of our policy on collection, use and disclosure of your information which will be collected during you access or using the service "the service") provided to you through the forum.</li>
+                    </ul>
+                    <p>When you access to the site, visit it or use the service, we, upon your knowledge and consent, receive and collect personal data on you "personality identification information" such as your name, your age, sex, your e-mail, your telephone number, your mail address and others. Sometimes when you access to a competition, make a purchase operation, participate in a publication or register in any other service, we may ask you to provide your payment details such as credit cards numbers or payment cards. All these information are referred to in this document as "registration information".</p>
+                    <p>We use your registration information only for providing service and site enhancement. By using the site you agree on collection and use of the said registration information in accordance with these conditions.</p>
+                    <ul>
+                        <li>Information about your behavior through internet, computer, mobile phone, any other device through internet or your internet protocol address, the pages visited, the contents reviewed, the sites and applications and/ or the services you have reached. Also our servers my collect these information automatically.</li>
+                    </ul>
+                    <ul>
+                        <li>If you choose access or visit to and/ or using a social net of a foreign body integrated to the service, you may receive identification information and other information on you, on your computer, mobile phone or any other device you provide for these services, as some services of the social net may allow you, for instance, to transmit contents of our service to your contact bodies or withdrawing the information of your contact points details to allow you to communicate with them through our service. Therefore, note that your are quite free to use the social net service connected to out service.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>How does the service use your information?</strong></li>
+                    </ul>
+                    <ul>
+                        <li>We use your personal information provided during the service to provide you with the goods, the products, the services and/ or the content which you request, as well as providing you with the news letters, marketing and promotional materials and other similar information. If you subscribe in any of our publications, we will confirm your subscription to in the said publications through your e-mail and we will deliver the said publication to your mail address.</li>
+                    </ul>
+                    <ul>
+                        <li>The information may also be used for communication with you on the new advantages, the products, the services and/ or for discussing enhancement of the services provided to you to satisfy your needs better.</li>
+                    </ul>
+                    <ul>
+                        <li>Unless otherwise the service clearly state, we may sell or exchange information on you, on your computer, your mobile phone or any other device. We may for example- but not limited to- exchange your registration information and your other identification information with our mother company, our subsidiaries, fellow companies and with carefully selected companies which we think they may provide services or products which may be useful to you. However if you are not willing to exchange your personal information with other unrelated parties, please contact our policy coordinator through the address indicates in these conditions.</li>
+                    </ul>
+                    <ul>
+                        <li>According to our own discretion, we may allow parties other than you to reach our database to provide the services which we may need, for example- but not limited to- shopping, market researches, community management, searching for marketing and the like. If you seek to purchase any products or service through the advantages existing in the service, we may send the relevant required information to other parties including credit card or other payment and credit operations before granting authorization and address verification.</li>
+                    </ul>
+                    <ul>
+                        <li>Information may be provided to our announcers to allow them to send announcements to you.</li>
+                    </ul>
+                    <ul>
+                        <li>But we would like to add that while we demand these other parties to apply the policy private suitable measures at dealing with the said information, we will not permit using the said information by them except for a clear purpose informed to us. We do not guarantee their compliance with these requirements by whatever means. Therefore, we, in this respect, bear no responsibility for any illegal acts or policies taken by any other party.</li>
+                    </ul>
+                    <ul>
+                        <li>We will have the right to use any information we receive or collect on your computer, your mobile phone or any other device which may define your identity for any legal commercial purpose related to any form of service or to any server.</li>
+                    </ul>
+                    <ul>
+                        <li>We reserve the right to use, transfer, sell and exchange the unknown information collected on our users as a group for any legal commercial purpose such as analyzing the trends of use and search for conforming announcers, hosting bodies and customers.</li>
+                    </ul>
+                    <ul>
+                        <li>In case of sale of any of the assets we own, we control by whatever from or owned or controlled by any of our mother companies, our subsidiaries or their subsidiaries or sold or transferred to any other entity, all information related to our service users may be included in the transferred assets. In such cases you will have the right to terminate your subscription as a user.</li>
+                    </ul>
+                    <ul>
+                        <li>We preserve the right to merge or mix the data of unknown identity or your non-personal data or data not related to your conduct in the position of internet communication or non-communication, from your computer, your mobile phone or any other device, in addition to your registration information or the other information of your identity for any legal commercial purpose.</li>
+                    </ul>
+                    <ul>
+                        <li>Like other several operators of electronic sites we collect the information transmitter by browser whenever you visit our site "access data". Access data may include information such as internet protocol address of your computer (IP), the type of browser you use, its issue, our site pages which you visit, the time and date of your visit and the time you send in those pages and other statistics.</li>
+                    </ul>
+                    <p>In addition to that, we may use external bodies services such as Google Analytics which collect, monitor and analyze any other data or information received in this way.</p>
+                    <ul>
+                        <li>We will have the right to reach the other information of your identification, to use and to exchange them with others for the purposes of health, legal, safety and security purposes and the other issues related to pubic interest.</li>
+                    </ul>
+                    <ul>
+                        <li>We will make the reasonable steps to protect your personal information from loss, unauthorized use or misuse.</li>
+                    </ul>
+                    <ul>
+                        <li>We will provide access to our database upon official order of any court, government, official order and we will provide any information in this respect.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Local saving device- tracking techniques: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>Service may sometimes place and/ or save any log or any other sorts of information and/ or devices (such as "link introduction files") in your computer, your mobile phone or any other device ("local saving device"). As link introduction files contain small quantity of data which may include an unknown individual introducer, link introduction files will be transmitted to your browser from internet site and will be saved in your computer hard disc.</li>
+                    </ul>
+                    <ul>
+                        <li>Like other electronic sites we use link introduction files for any legal work related to servers, electronic site, service and service management to collect wide range demographic information to make researches, to analyze trends, to register and to manage personal information. You can direct your browser to refuse all link introduction files or to clarify when any link introduction files is sent. However if you are not accept link introduction files, you may not be able to use some parts of our electronic site.</li>
+                    </ul>
+                    <ul>
+                        <li>In addition to the aforementioned local saving device, we may use techniques such as web beacons, web bugs, clear gifs and similar techniques collectively beside local saving device "tracking techniques" as we use tracking techniques for all or part of the work purposes which we describes above for using local saving device.</li>
+                    </ul>
+                    <ul>
+                        <li>Announcements service sellers and other parties may sometimes use tracking techniques to provide to you announcements specially designed to satisfy your concerns reflected in your browsing to this service or other electronic sites, applications and services you already visited. These external bodies will, at browsing, collect non-personal data which can be known such as providing the model, settings and specifications of your operation system, your geographical locations in addition to your internet protocol (IP), the pages you visited, the content you reviewed, the sites and applications/ or the service through which you entered the site. The use of tracking techniques by the other parties is subject to their privacy policies and not to this privacy policy; and we will not have any control, liability or legal liability for that.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Information transfer: </strong></li>
+                    </ul>
+                    <p>Your information may be transferred to servers and databases outside your city, district or country or to other judicial or government authorities in which privacy laws may not be similar to those applied to your jurisdiction. Therefore, please be advised that we may or may not assist in transferring your information from and to any other jurisdiction. Your consent to the items of this privacy policy followed by providing these information by you means that your consent to any transfer of this kind.</p>
+                    <ul>
+                        <li><strong>Monitoring, non-monitoring and different content: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>please note that we make all efforts to provide satisfactory experience through internet and service to internet users, ands this requires and needs monitoring service activities specially in the fields of social general discussions, imagery shows, videos, advertising boards, forums, chats, logs, personal search, search for jobs and other fields to ensure compliance with these conditions. The user hereby explicitly and irrevocably agrees on that without any condition.</li>
+                    </ul>
+                    <ul>
+                        <li>On the other hand we do not perform, undertake or guarantee to perform, make or arrange any prior observation and monitoring to all contents before being published, loaded, transferred, transmitted or allowed through the service by users. So the user will be exposed to an insulting content or impolite or containing inappropriate materials or content which violates these conditions. We will not be responsible for or subject to any from of liability or legal or contractual responsibility or other for any content published or transferred or any other content presented through the service.</li>
+                    </ul>
+                    <ul>
+                        <li>We do not necessarily support, believe in, encourage or agree with the comments, opinions, published, loaded or transmitted statements available by another form to service or through it including- but not limited to- the fields of discussions, images, video sections, advertisement boards, forums, chats, logs, essays and other classified advertisements.</li>
+                    </ul>
+                    <ul>
+                        <li>Any content published, loaded, transferred, transmitted or offered through the service including advices, opinions, views and the liability of the content publishers do not in any way represent or reflect our opinion, opinions of our licensees, service sellers or providers. They are not approved by any of the said parties. the users has expressly declared and agreed that we, the service sellers or providers bear liability or become legally liable for by any way later to the user or become exposed to the user's liability for any such content which has been transmitted, loaded or provided by any form through the service including the contents which violate the agreement.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Security of information and notices: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>It is admitted that any data transfer will not be completely secure and there is no material or electronic security system in which no breakthrough can be committed. For the said reasons, we do not guarantee the security of the information transmitted or received by us; and we do not guarantee the security of our servers, networks or databases.</li>
+                    </ul>
+                    <ul>
+                        <li>By using this electronic site and account you will be liable for saving the confidentiality of your account, your password and for restricting access to your computer, mobile phone or any other device. You also expressly agree to hold responsibility for all activities which occur in your account or in your password. If you are under the age of 18, you may use the electronic site and the service only in presence and by participation of your father or your legal guardian.</li>
+                    </ul>
+                    <ul>
+                        <li>By using the service you agree to and accept all any risks related to the information transmitted to us or which we collect when you access to, visit or use the service including, among other things, registration information and the other information which can be recognized.</li>
+                    </ul>
+                    <ul>
+                        <li>If you choose to save registration information or the other information which can be recognized and which others can reach, we will not be responsible for any loss or any consequences of them. if you lose your computer, your mobile phone or any other device containing these information, you have to order, to arrange and to take all steps to save yourself and your information.</li>
+                    </ul>
+                    <ul>
+                        <li>We are fully aware that the security of your information in our possession or under our control are exposed to risks or prejudice, therefore we may attempt to inform you of that when it occurs through your computer, your mobile phone or any other device.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Children and restrictions posed on them: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>This privacy policy agreement is applicable to children information which we collect from any of the portents or the legal guardian. However, we do not exchange the information which can be recognized on children with other parties, and we do not send promotional information to children but to their parents and their legal guardian.</li>
+                    </ul>
+                    <ul>
+                        <li>You can revise, change or delete the personal information of your child or cancel the parental consent by sending e-mail to us to our registered address.</li>
+                    </ul>
+                    <ul>
+                        <li>This service is not for use by children under 18 and no person under this age is permitted to register to this service or to use the fields of social, community or public discussion or the forums, logs or displaying images and videos shows. Minors over 13 must have permission of their parents before making any purchase process or subscription in any program.</li>
+                    </ul>
+                    <ul>
+                        <li>Children sometimes reveal their personal information in the service fields which the public can have access to. This may lead to receiving undesirable messages from other external parties. Therefore, we recommend extending advices to children to refrain from attempting or performing this practice.</li>
+                    </ul>
+                    <ul>
+                        <li>We generally encourage effective parental care in this respect. But if you are worry from the method or practice of your children in this respect, we recommend ordering consultancy from our privacy policy coordinator through the address indicated in privacy policy conditions.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Our rights to terminate or suspend service: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>We reserve full right at nay time with or without mentioning reasons, with or without notice and without prejudice to any other right to us to terminate, stop, suspend or restrict the service, your account, the users ability to enter, visit or use the service or any part thereof and/ or the agreement. However, if you breach, violate or act any a way not in harmony with contents of these conditions or with any rules regulating the use of this service, we may without any prior notice terminate, suspend, restrict or stop your account, your access to and use of the service and the agreement.</li>
+                    </ul>
+                    <ul>
+                        <li>In case of termination or suspension of the user's account or personal file, his ability to access to or to use the service or part thereof or the agreement will automatically terminate and written off. We, in addition to any other rights entitled to us, remove or order change of the user's password or identity provided to him or any other registration information in addition to re-appointing and/ or permitting another party to use the user's password and/ or identity.</li>
+                    </ul>
+                    <ul>
+                        <li>Our practice of any of our rights set froth in any of the provisions of this agreement does not impose any commitment on us or deprive us of any right to remove any content or copies from all the information related to the user's account, his personal file and all the content we published, loaded, referred, transmitted or allowed by any other method through the service; and we can preserve any ort all of the above-mentioned, and it will be displayable by us, by our licensees, our sellers, service providers and the other parties including other users.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Discharge from liability and liability limits: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>The user understands and agrees that he uses the service under his own liability. The service will be provided as it is with all defects as available. Under this agreement we are expressly free from any liability from any explicit or implicit pledges, guarantees or declarations including any guarantees related accuracy, reliability, ownership, marketability, non-infringe or inappropriateness to a certain purpose, or any other guarantee, condition, representation of the completion of any content which we provide or relate to the service.</li>
+                    </ul>
+                    <ul>
+                        <li>Although we seek diligently to provide service without interruption, but we do not undertake or guarantee the operation or access to the service and/ or communication or messages from our side without interruption in due time or free from defects, or non-occurrence of failure, delay, inaccuracy, errors, omission, loss of transferred contents or failure to send any harmful software or viruses (worms, bugs), errors or defects of similar nature through the service, and we hereby discharge ourselves from any responsibly in this respect and from any such incidence.</li>
+                    </ul>
+                    <ul>
+                        <li>We are not responsible and will not be responsible for incompletion, inaccuracy, loss, delay or misleading, deformation, damage, non-readability, non-deliverability, not receiving the communications or messages coming or sent to us or to you for any reason related to the service, the devices, access to or use of in any account or personal file or any other use, by any means or for any of the above-mentioned reasons.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Communications between us: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>All communications between us and you shall be made through electronic means whether used for access to the electronic site, to visit, to use the service, to sent messages, to transmit notices through the serviced or to communicate between each other through messages.</li>
+                    </ul>
+                    <ul>
+                        <li>Under this agreement you expressly agree to obtain and to receive all these information from us exclusively in its electronic form.</li>
+                    </ul>
+                    <ul>
+                        <li>In addition to that, the user accepts and agrees that all notices, documents and other similar communications we electronically provide to the user satisfy all the legal requirements of these communications if they are written.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Copy rights, trademarks and intellectual property rights:</strong></li>
+                    </ul>
+                    <ul>
+                        <li>The (*) trademark, all contents, features and other functions provided by us, by our licensees, suppliers and/ or service providers including, among other things, the images, texts, music, voice sectors, videos, trademarks, trade names, service marks, other trademarks introducers, design, assembly, service appearance and all announcements related to them are our own property, property of our sellers and/ or services providers.</li>
+                    </ul>
+                    <ul>
+                        <li>By your consent you may not copy, re-copy, amend, change, cut, revise, adapt, translate, improve, re-draft, re-organize, re-regulate, create works derived from them, transfer, remove, delete, remove, reflex, disassemble, publish, circularize, display, distribute, lease, sale, sublicense, provide to others or using any content obtained through the service, except what is permitted by any copy rights, trademark rights or intellectual property rights (CIPR) or if expressly permitted in writing under this agreement or by another written agreement from us.</li>
+                    </ul>
+                    <ul>
+                        <li>You officially pledge not to publish, load, transfer or allow by any form or through the service any content which may be violate or breach the copy rights, trademarks, trade secrets, any personal rights or other proprietary rights related to us or to our licensees, suppliers, services providers, other users and / or any other party.</li>
+                    </ul>
+                    <ul>
+                        <li>You must not attempt to wholly or partially extract any source code, ideas or logarithms essential to the service including- but not limited to- any content, correspondence, programming, software, function or advantages of service provider's networks, servers or databases or to minimize service wholly or partially.</li>
+                    </ul>
+                    <ul>
+                        <li>Like service providers we respect intellectual property of others and we expect the user to do the same. If the user violates copy rights or intellectual property rights, we- in addition to the other remedies provided to us by the law- may terminate and/ or suspend the account, the personal file, the access, the visit and the service use by the violating user. We may also stop access to the content and close the user's account if the conditions require so.</li>
+                    </ul>
+                    <ul>
+                        <li>If you have any reasons to believe that your own content has been copied or the service can reach it in a way which violate any of your copy rights or the service contain any reference or activity which violate your copy rights, you can notify us of that and cooperate with us to deal with this situation.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Our privacy policy coordinator: </strong></li>
+                    </ul>
+                    <p>If you have any inquiries on privacy policy conditions or the service, please contact us.</p>
+                    <ul>
+                        <li><strong>Indemnities: </strong></li>
+                    </ul>
+                    <p>As a condition to use this site, service and content you as a user agree not to cause harm to us, to protect us and to indemnify us against any and all commitments, claims, damages, complaints, costs, expenses and fees including lawyers costs resulting from your illegal use of the electronic site, the service or violation of any of the provisions of the provisions of this privacy conditions document.</p>
+                    <ul>
+                        <li><strong>The governing law and disputes settlement: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>These conditions shall be subject to all the applicable laws, regulations and rules of the Kingdom of Saudi Arabia and shall be construed accordingly.</li>
+                    </ul>
+                    <ul>
+                        <li>Any dispute occurs or related in any way to these conditions shall be settled amicably within one month from its occurrence otherwise it shall be finally judged by arbitration in accordance with the applicable rues and laws of arbitration of the Kingdom of Saudi Arabia by one arbitrator provided that arbitration shall be performed in Arabic language and the venue of arbitration shall be Riyadh Chamber of Commerce.</li>
+                    </ul>
+                    <ul>
+                        <li>Resort to arbitration shall not breach any right to any party to apply to any competent court in Riyadh city, of the Kingdom of Saudi Arabia to appeal for any judicial order or similar indemnity.</li>
+                    </ul>
+                    <ul>
+                        <li><strong>Amendments to privacy policy conditions: </strong></li>
+                    </ul>
+                    <ul>
+                        <li>We may by our own discretion from time to time amend these conditions and we shall provide a notice of that by internet concerning any material changes within a reasonable period of time. Your continuance to use this electronic site after amendment is deemed an implicit acceptance by you to this amendment.</li>
+                    </ul>
+                    <p>If you agree and accept the above-mentioned conditions, click "accepted" button.</p>
+                    <p>If you do not agree and accept the above-mentioned conditions, click "not accepted" button, and exit from the site.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">accepted</button>
+                    <button type="button" class="btn btn-primary">not accepted</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<a href="#home" class="scroll-to-top scroll-to-target js-scroll-trigger" id="scrollTop" data-target="html"><span class="fas fa-angle-up"></span></a>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scroll-nav.js"></script>
+<script src="js/slider.jquery.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/countup.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/platform.js"></script>
+<script>
+    /**
+ * Created by madla on 8/17/2018.
+ */
+var $canvas
+function handlePreloader() {
+    if ($('.preloader').length) {
+        $('body').removeClass('active-preloader-ovh');
+        $('.preloader').fadeOut();
+    }
+}
+function appScreenshotCarousel() {
+    if ($('.appScreenshotCarousel-container').length) {
+
+        var swiper = new Swiper('.appScreenshotCarousel-container', {
+            autoplay: {
+                delay: 2000
+            },
+            effect: 'coverflow',
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 4,
+            initialSlide: 0,
+            keyboardControl: true,
+            mousewheelControl: false,
+            lazyLoading: true,
+            preventClicks: false,
+            preventClicksPropagation: false,
+            lazyLoadingInPrevNext: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 250,
+                modifier: .5,
+                slideShadows: false,
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 26,
+                },
+                767: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 50,
+                },
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            }
+        });
+
+    }
+}
+function statsCounter(id, end) {
+
+    var numAnim = new CountUp(id, 0, end);
+    if (!numAnim.error) {
+        numAnim.start();
+    } else {
+        console.error(numAnim.error);
+    }
+}
+function scroll(multiplier) {
+    if ($("#toggleCarousel").hasClass("rtl")) {
+        if (multiplier == 1) {
+            $canvas.animate({left: 0});
+        } else if (multiplier == 2) {
+            $canvas.animate({left: 260});
+        } else if (multiplier == 3) {
+            $canvas.animate({left: 520});
+
+        }
+
+    } else {
+        if (multiplier == 1) {
+            $canvas.animate({left: 0});
+        } else if (multiplier == 2) {
+            $canvas.animate({left: -260});
+        } else if (multiplier == 3) {
+            $canvas.animate({left: -520});
+
+        }
+
+    }
+}
+$('.iphoneSliderNavigation').click(function () {
+    var multiplier = parseInt($(this).data("distance"));
+    if ($(".carousel"))
+        scroll(multiplier)
+
+});
+$(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
+    $('#header_scatter').css({
+        'transform': 'translate(0px, ' + wScroll / 25 + '%)'
+    });
+    $('#header_iphone').css({
+        'transform': 'translate(0px, ' + wScroll / 15 + '%)'
+    });
+    $('.header_ribbon').css({
+        'transform': 'translate(0px, ' + wScroll / 5 + '%)'
+    });
+})
+
+$(function () {
+
+
+
+});
+
+
+$(document).ready(function () {
+    handlePreloader();
+    $("#mainNav").hide();
+    console.log(platform.os); // 'IE'
+    if (platform.os.family == "iOS") {
+        $("header .btn-download.active").attr("href", "https://itunes.apple.com/us/app/easygifts/id1330770578?ls=1&mt=8");
+    } else if (platform.os.family == "Android") {
+        $("header .btn-download.active").attr("href", "https://play.google.com/store/apps/details?id=com.easygift");
+    }
+    $canvas = $("div.canvas");
+    appScreenshotCarousel();
+    statsCounter("starsStat", 1834);
+    statsCounter("likesStat", 1940);
+    statsCounter("downloadStat", 1000);
+    statsCounter("usersStat", 9234);
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    var windowsize = $window.width();
+
+    function checkWidth() {
+        windowsize = $window.width();
+        if (windowsize < 768) {
+            $("#mainNav").slideDown();
+            $("#scrollTop").show();
+        } else {
+            if ($window.scrollTop() < 500) {
+                $("#mainNav").hide();
+                $("#scrollTop").hide();
+
+            }
+        }
+        console.log("window resize !")
+    }
+
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+
+    $(window).scroll(function () {
+
+        if (windowsize > 768) {
+            // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 500) {
+                $('#mainNav').slideDown();
+                $("#scrollTop").fadeIn();
+            } else {
+                $('#mainNav').fadeOut();
+                $("#scrollTop").fadeOut();
+            }
+        }
+    });
+
+
+    $('#featuresCarousel').slick({ //add in your correct containing element
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        nextArrow: '<button class="carousel-control-prev" > <img src="images/left-chevron.svg" width="25px" alt=""> <span class="sr-only">Previous</span></button>',
+        prevArrow: '<button class="carousel-control-next" style="z-index: 100"><img src="images/right-chevron.svg" width="25px" alt=""><span class="sr-only">Next</span></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+
+    });
+    /* show lightbox when clicking a thumbnail */
+    $('a.thumb').click(function (event) {
+        event.preventDefault();
+        var content = $('.modal-body');
+        content.empty();
+        var title = $(this).attr("title");
+        $('.modal-title').html(title);
+        content.html($(this).html());
+        $(".modal-profile").modal({show: true});
+    });
+    // hide .navbar first
+
+// Gets the video src from the data-src on each button
+
+    var $videoSrc;
+    $('#video_placeholder').click(function () {
+        $videoSrc = $(this).data("src");
+    });
+    console.log($videoSrc);
+
+
+// when the modal is opened autoplay it
+    $('#videoModal').on('shown.bs.modal', function (e) {
+
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src', $videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1");
+    })
+
+
+// stop playing the youtube video when I close the modal
+    $('#videoModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src', $videoSrc);
+    })
+    $("div[id^=art]").on("click", function (event) {
+        $(this).css("color", "#111");
+        $(this).siblings().css("color", "#656565");
+        $(this).addClass("selected");
+        $(this).siblings().removeClass("selected");
+    });
+});
+
+
+
+</script>
+
+</body>
+</html>

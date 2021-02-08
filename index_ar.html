@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <style>
+        .preloader {
+            background: #6541c1;
+            background: -webkit-gradient(left top, right top, color-stop(0%, #6541c1), color-stop(98%, #d43396), color-stop(100%, #d43396));
+            background: -webkit-gradient(linear, left top, right top, from(#6541c1), color-stop(98%, #d43396), to(#d43396));
+            background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6541c1', endColorstr='#d43396', GradientType=1);
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999999;
+        }
+        .preloader .spinner {
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -30px;
+            margin-left: -30px;
+            background-color: #fff;
+            border-radius: 100%;
+            -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+            animation: sk-scaleout 1.0s infinite ease-in-out;
+        }
+    @-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}</style>
+    <link rel="stylesheet" href="css/styl.css">
+    <title>تطبيق ايزي جيفت</title>
+    <link href="https://fonts.googleapis.com/css?family=Changa:300,400,600&amp;subset=arabic" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar">
+<div class="preloader"><div class="spinner"></div></div>
+
+<header id="home" class="clearfix rtl">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light d-none d-md-flex">
+            <div class="row">
+                <img src="images/logo.svg" class="navbar-brand" height="75px" alt="">
+                <button class="navbar-toggler pull-right" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mb-auto">
+                    <li class="nav-item active"><a class="nav-link js-scroll-trigger" href="#home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">مميزات التطبيق</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#howItWorks">طريقة عمل التطبيق</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#showcase">واجهات التطبيق</a></li>
+                </ul>
+            </div>
+            <div class="dropdown float-right">
+                <button class="btn btn-default dropdown-toggle bg-light btn-sm" type="button" data-toggle="dropdown">
+                    <span class="fa fa-globe"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="index.html">English</a></li>
+                    <li class="dropdown-item"><a href="index_ar.html">العربية</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section id="slogan" class="row">
+            <div class="col-md-7 col-sm-12">
+                <h1>تطبيق ايزي جيفت</h1>
+                <p class="text-justify" style="margin-top: 30px">
+                    تطبيق ايزي جفت هو أول تطبيق متكامل للإهداء في المملكة العربية السعودية حيث يجمع أكثر من 200+ هدية من ماركات عالمية متنوعة على منصة واحدة توفر عليك عناء البحث عن هدية مناسبة في كل الأوقات والمناسبات.
+                </p>
+                <a href="https://play.google.com/store/apps/details?id=com.easygift" class="btn-download active" style="margin-top: 30px"><span>تحميل التطبيق</span></a>
+                <a href="#showcase" class="btn-download bordered js-scroll-trigger" style="margin-top: 30px"><span>تصفح التطبيق</span></a>
+            </div>
+            <div class="col-md-5 d-none d-md-flex" id="header_iphone_container">
+                <div id="header_iphone"></div>
+                <div class="header_ribbon" id="header_ribbon_1"></div>
+                <div class="header_ribbon" id="header_ribbon_2"></div>
+            </div>
+        </section>
+    </div>
+</header>
+
+
+<div class="container">
+    <div id="stats" class="row rtl">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="usersStat">9,234</span>مستخدمين</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="downloadStat">1,000</span>تحميلات</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="likesStat">1,940</span>إعجابات</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="stat">
+                <p><span class="counter" id="starsStat">1,834</span> 5 أنجم</p>
+            </div><!-- /.single-fun-fact -->
+        </div><!-- /.col-md-3 -->
+    </div>
+
+</div>
+
+
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-purple rtl" id="mainNav">
+    <div class="container">
+
+        <img src="images/logo-white.svg" class="navbar-brand" height="50px" alt="">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse2">
+            <ul class="navbar-nav mb-auto">
+                <li class="nav-item "><a class="nav-link js-scroll-trigger" href="#home">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#features">مميزات التطبيق</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#howItWorks">طريقة عمل التطبيق</a>
+                </li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#showcase">واجهات التطبيق</a></li>
+            </ul>
+        </div>            <div class="dropdown float-right">
+        <button class="btn btn-default dropdown-toggle bg-light btn-sm" type="button" data-toggle="dropdown">
+            <span class="fa fa-globe"></span></button>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a href="index.html">English</a></li>
+            <li class="dropdown-item"><a href="index_ar.html">العربية</a></li>
+        </ul>
+    </div>
+
+    </div>
+</nav>
+
+
+<section id="features">
+<div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center">مميزات التطبيق</h1>
+                <p class="text-center">
+                    ايزي جفت يوفر عليك الكثير من الوقت والجهد الذي كنت ستبذله في اختيار الهدية المناسبة وتغليفها ومن ثم توصيلها  , كل ما عليك فعله هو اختيار هديتك وفريق ايزي جفت سيتكفل بتغليفها وتوصيلها إلى أي مكان مع خدمة توصيل سريعة.                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="featuresCarousel" class="text-center">
+                    <div>
+                        <div>
+                            <img class="img-fluid" width="20%" src="images/simple_interfaces_icon.svg"/>
+                            <h5 class="carousel-heading">واجهات سهلة</h5>
+                            <small class="carousel-text">يتميز تطبيق ايزي جفت بالعديد من الواجهات المميزة والبسيطة لتساعدك في اختيار الهدية بشكل مميز وسهل
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/diverse_gifts_icon.svg"/>
+                            <h5 class="carousel-heading">هدايا متنوعة </h5>
+                            <small class="carousel-text">هنالك العديد من الخيارات المتنوعة داخل التطبيق تضم مجموعة من الماركات العالمية الفاخرة
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/gift_cards_icon.svg"/>
+                            <h5 class="carousel-heading">كروت اهداء </h5>
+                            <small class="carousel-text">يتيح لك تطبيق ايزي جفت اضافة كرت اهداء فاخر مصمم بشكل مميز وفخم
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/fast_delivery_icon.svg"/>
+                            <h5 class="carousel-heading">توصيل سريع </h5>
+                            <small class="carousel-text">يتميز تطبيق ايزي جفت بالعديد من خيارات التوصيل المرنه والسريعة الي جميع مدن المملكة
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/creative_wrapping_icon.svg"/>
+                            <h5 class="carousel-heading">تغليف مبتكرة</h5>
+                            <small class="carousel-text">يتميز تطبيق ايزي جفت بجودة التغليف المبتكر والغير تقليدي
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img class="img-fluid" src="images/secured_payment.svg"/>
+                            <h5 class="carousel-heading">دفع آمن</h5>
+                            <small class="carousel-text">نوفر لك خدمة الدفع الآمن عن طريق بطاقات الفيزا والماستركارد ومدى
+                            </small>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="clearfix"></div>
+</div>
+    </section>
+
+
+<section id="howItWorks">
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="row rtl" id="toggleCarousel">
+            <div class="col-md-4 offset-md-1 col-sm-8 offset-sm-2 maskContainer">
+                <div class="mask">
+                    <div class="canvas">
+                        <div class="page step_1"></div>
+                        <div class="page step_2"></div>
+                        <div class="page step_3"></div>
+                    </div>
+                </div>
+                <img src="images/iphonex-frame.png">
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 offset-md-1 right text-right">
+                <h3 style="color: #3F3F3F; padding-bottom: 15px;">طريقة عمل التطبيق</h3>
+                <div class="iphoneSliderNavigation selected" id="art1" data-distance="1">
+                    <div class="icon-container ">
+                        <img src="images/select_your_gift_icon_light.svg" class="img-fluid ico light" alt="">
+                        <img src="images/select_your_gift_icon.svg" class="img-fluid ico dark" alt="">
+                    </div>
+
+                    <h5>قم بإختيار الهدية المناسبة </h5>
+                </div>
+                <div class="iphoneSliderNavigation" id="art2" data-distance="2">
+                    <div class="icon-container"><img src="images/add_the_message_icon.svg" class="dark img-fluid ico wider" alt="">
+                        <img src="images/add_the_message_icon_light.svg" class="img-fluid ico wider light" alt=""></div>
+                    <h5>أضف الرسالة التي ترغب في كتابتها مع الهدية </h5>
+                </div>
+                <div class="iphoneSliderNavigation" id="art3" data-distance="3">
+                    <div class="icon-container"><img src="images/select_the_recipient_icon.svg" class="dark img-fluid ico" alt="">
+                        <img src="images/select_the_recipient_icon_light.svg" class="img-fluid ico light" alt=""></div>
+                    <h5>حدد الشخص الذي ترغب في اهدائه بخطوات بسيطة وسهلة </h5>
+                </div>
+                <a href="https://itunes.apple.com/us/app/easygifts/id1330770578?ls=1&mt=8" class="btn-download store active">
+                    <i class="fab fa-apple"></i>
+                    <span class="inner">
+                            <span class="avail">احصل عليه من</span>
+                            <span class="store-name">App Store</span>
+                        </span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.easygift" class="btn-download store bordered">
+                    <i class="fab fa-google-play"></i>
+                    <span class="inner">
+                            <span class="avail">احصل عليه من</span>
+                            <span class="store-name">Google Play</span>
+                        </span>
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <div style="cursor:pointer" data-toggle="modal" data-src="https://www.youtube.com/embed/ScMzIvxBSi4" data-target="#videoModal"
+         id="video_placeholder">
+        <div class="container text-center">
+            <h2>شاهد الفيديو التعريفي</h2>
+            <a href="#" class="hvr-pulse">
+                <i class="fa fa-play"></i></a>
+        </div>
+    </div>
+</section>
+
+
+<section id="showcase" class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-center">واجهات التطبيق </h1>
+            <p class="text-center">لأننا نقدر قيمة الوقت بالنسبة لك اعتمدنا واجهات بسيطة وسهلة بدءًا من التسجيل حتى ارسال الهدية، مع هذه الواجهات البسيطة في ايزي جفت أصبح بإمكانك إختيار هديتك وارسالها في غضون 60 ثانية من أي مكان داخل المملكة العربية السعودية.</p>
+        </div>
+    </div>
+
+    <div class="row appScreenshotCarousel-container swiper-container ">
+        <div class="screen-mobile-image"></div>
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" style="background:url(images/slider-1.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-2.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-3.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-4.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-5.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-6.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-7.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-8.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-9.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-10.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-11.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-12.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-13.png) no-repeat; background-position: center;"></div>
+
+            <div class="swiper-slide" style="background:url(images/slider-14.png) no-repeat; background-position: center;"></div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer>
+    <div class="container rtl">
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="images/logo-white.svg" alt="" class="img-fluid d-block" width="25%">
+                <small>تطبيق ايزي جفت هو أول تطبيق متكامل للإهداء في المملكة العربية السعودية.</small>
+            </div>
+            <div class="col-sm-3">
+                <p>العنوان <br>
+                    <small>الهاتف: 00966539733332 <br>
+                        البريد الإلكتروني: hallo@easygift.com <br>
+العنوان: المملكة العربية السعودية, الرياض <br></small>
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <form action="#" class="subscribe-form clearfix">
+                    <div class="left-content clearfix">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="example@mail.com" class="text-white">
+                    </div><!-- /.left-content -->
+                    <div class="right-content float-right clearfix">
+                        <button class="btn-download" type="submit"><span>اشـــتــرك الان</span></button>
+                    </div><!-- /.right-content -->
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <small><a href="#" id="termsLink" data-toggle="modal" data-target="#termsModal" style="text-decoration: underline; color:white">شروط الخصوصية والاستخدام</a></small>
+                |
+                <small><a href="#" id="deliveryLink" data-toggle="modal" data-target="#deliveryModal" style="text-decoration: underline; color:white">سياسة التسليم</a></small>
+                |
+                <small><a href="#" id="refundLink" data-toggle="modal" data-target="#refundModal" style="text-decoration: underline; color:white">سياسة إعادة المال والإرجاع</a></small>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <hr style="border-color: #fff">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul class="social-network social-circle">
+                    <li><a href="https://www.facebook.com/easygift.app.14/" class="icoFacebook" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/easygiftsapp" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://plus.google.com/101286917975478865626" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                    <li><a href="https://www.Linkedin.com/company/easygiftsapp/" class="icoLinkedin" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.snapchat.com/add/easygiftsapp/" class="icoGoogle" title="Snapchat"><i class="fab fa-snapchat"></i></a></li>
+                    <li><a href="https://www.instagram.com/easygiftsapp/" class="icoLinkedin" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/966539733332" class="icoGoogle" title="Whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <p class="float-right" style="font-weight: lighter">&copy; All Rights Reserved EasyGift.net</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+            <div class="modal-body">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+            <div class="modal-body rtl">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                    <h4 class="modal-title">شروط الاستخدام</h4>
+                </div>
+                <!-- 16:9 aspect ratio -->
+                <div class="modal-content" style="padding: 10px; max-height: 400px; overflow: auto" >
+                    <p><strong><u>اتفاق على شروط</u></strong></p>
+                    <p>تشكل شروط الاستخدام هذه اتفاقية ملزمة قانونًا بينك ، سواء كان ذلك بصفة شخصية أو نيابةً عن كيان ("أنت") ، "ومتجر الهدية السهلة لتقنية المعلومات"( "نحن" ، "بواسطتنا" أو "ملكنا") ، فيما يتعلق بوصولك إلى الموقع الالكتروني <a href="http://www.easygift.net/">http://www.easygift.net</a> واستخدامه بالإضافة إلى أي شكل آخر من أشكال وسائل الإعلام ، أو قنوات وسائل الإعلام ، أو تطبيقات موقع الهاتف المحمول أو تطبيقات الهاتف المحمول ، أو التطبيقات المرتبطة بالهاتف المحمول أو المرتبطة بأي شكل آخر (بشكل جماعي ، "الموقع").</p>
+                    <p>يوفر الموقع سوقًا عبر الإنترنت للهدايا الخاصة المرتبة والمختارة. من أجل المساعدة في جعل الموقع بيئة آمنة لشراء وبيع عروض السوق، يُطلب من جميع المستخدمين قبول شروط الاستخدام هذه والامتثال لها. يتعيـن أن توافق على أنه من خلال الوصول إلى الموقع و / أو عروض السوق ، فإنك تكون قد قرأت وفهمت ووافقت على الالتزام بكل شروط الاستخدام هذه. إذا كنت لا توافق على جميع شروط الاستخدام هذه ، فإنك تكون ممنوع صراحة من شروط الاستخدام و / أو عرض السوق هذه ، ويجب عليك التوقف عن استخدامه على الفور. الشروط والأحكام التكميلية أو الوثائق التي قد يتم نشرها على الموقع من وقت لآخر بموجب هذه الوثيقة ، يتم تضمينها صراحةً بموجب هذا المرجع. نحن نحتفظ بالحق ، وفقًا لتقديرنا الخاص ، في إجراء تغييرات أو تعديلات على شروط الاستخدام هذه في أي وقت ولأي سبب. سننبهك بأي تغييرات عن طريق تحديث تاريخ "آخر تحديث" لشروط الاستخدام هذه ، ويجب أن تتنازل عن أي حق لتلقي إشعار محدد بكل تغيير يحدث من هذا القبيل. ويقع على عاتقك مسؤولية المراجعة الدورية لشروط الاستخدام هذه للبقاء على اطلاع على التحديثات. سوف تخضع ، وستعتبر أنك قد أدركت وقبلت التغييرات التي تحدث في أي شروط استخدام منقحة من خلال استمرارك في استخدام الموقع بعد تاريخ نشر شروط الاستخدام المعدلة.</p>
+                    <p>المعلومات المقدمة على الموقع غير مخصصة للتوزيع أو الاستخدام من قبل أي شخص أو كيان في أي ولاية قضائية أو بلد يكون فيه هذا التوزيع أو الاستخدام مخالفاً للقانون أو اللوائح أو الذي سيخضعنا لأي متطلبات تسجيل داخل هذه الولاية أو الدولة. وبناءً على ذلك ، فإن الأشخاص الذين يختارون الوصول إلى الموقع من مواقع أخرى يفعلون ذلك بمبادرتهم الخاصة وهم وحدهم المسؤولون عن الامتثال للقوانين المحلية ، إذا كانت القوانين المحلية قابلة للتطبيق وإلى مدى تطبيق هذه القوانين.</p>
+                    <p>الموقع مخصص للمستخدميـن الذين لا يقل عمرهـم عن 13 عامًا. يجب على جميع المستخدمين القاصرين في الولاية القضائية التي يقيمون فيها (وعمرهم أقل من 18 عامًا) الحصول على إذن من ولي الأمر أو الوصي عليهم أو المشرفين عليهم مباشرةً لاستخدام الموقع. إذا كنت قاصراً ، يجب أن يقرأ ولي أمرك أو الوصي عليك ، وأن يوافق على شروط الاستخدام هذه قبل استخدامك للموقع.</p>
+                    <p><strong><u>&nbsp;</u></strong></p>
+                    <p><strong><u>حقوق الملكية الفكرية</u></strong></p>
+                    <p>ما لم يُنَص على خلاف ذلك ، فإن عروض الموقع والسوق هي ملكية خاصة بنا ، كما أن كافة رموز المصدر وقواعد البيانات والوظائف والبرمجيات وتصميمات مواقع الويب والصوت والفيديو والنص والصور والرسومات الواردة على الموقع (التى تسمى جميعها ، "المحتوى") وكذلك العلامات التجارية وعلامات الخدمة والشعارات الموجودة فيها ("العلامات") مملوكة لنا أو خاضعة للرقابة منا أو مرخص بها من قبلنا ومحمية بموجب قوانين حقوق النشر والعلامات التجارية وحقوق الملكية الفكرية المتنوعة الأخرى وقوانين المنافسة غير المشروعة. لقد تم توفير المحتوى والعلامات على الموقع "كما هي" من أجل معلوماتك واستخدامك الشخصي فقط. باستثناء ما هو منصوص عليه صراحة في شروط الاستخدام هذه ، لا يجوز نسخ أي جزء من الموقع أو عروض السوق أوأي محتوى أو علامات أو إعادة إنتاجها أو تجميعها أو إعادة نشرها أو تحميلها أو نشرها أو عرضها علناً أو ترميزها أو ترجمتها أو نقلها أو توزيعها أو بيعها أو الترخيص بها أو استغلالها بأي طريقة أخرى لأي غرض تجاري ، مهما كان هذا الغرض ، دون الحصول على إذن كتابي صريح مسبق منا. وذلك بشرط أن تكون مؤهلاً لاستخدام هذا الموقع ، فإنك مصرح لك بترخيص محدود للوصول إلى الموقع واستخدامه ولتنزيل أو طباعة نسخة من أي جزء من المحتوى الذي حصلت عليه بشكل صحيح من أجل الوصول فقط إلى معلوماتك الشخصية وغير التجارية. نحتفظ بجميع الحقوق غير الممنوحة لك بشكل صريح في الموقع والمحتوى والعلامات.</p>
+                    <p><strong><u>&nbsp;</u></strong></p>
+                    <p><strong><u>تمثيلات المستخدم</u></strong></p>
+                    <p>باستخدام الموقع أو عروض السوق ، فإنك تقر وتضمن ما يلي: (1) ستكون جميع معلومات التسجيل التي ترسلها صحيحة ودقيقة وحديثة وكاملة ؛ (2) أنك ستحافظ على دقة هذه المعلومات وستقوم بتحديث معلومات التسجيل هذه على الفور عند الضرورة ؛ (3) أن لديك الأهلية القانونية وتوافق على الالتزام بشروط الاستخدام هذه ؛ (4) أنك لست تحت سن 13 ؛ (5) أنك لست قاصرًا في الولاية القضائية التي تقيم فيها ، أو إذا كنت قاصرًا ، فإنك قد حصلت على إذن الوالدين لاستخدام الموقـع ؛ (6) أنك لن تصل إلى الموقع أو عروض السوق من خلال وسائل آلية أو غير بشرية ، سواء من خلال برنامج روبوت أو برنامج نصي أو غير ذلك ؛ (7) أنك لن تستخدم الموقع لأي غرض غير قانوني أو غير مصرح به ؛ و (8) أن استخدامك للموقع أو عروض السوق لن ينتهك أي قانون أو لائحة معمول بها.</p>
+                    <p>&nbsp;إذا قدمت أي معلومات غير صحيحة أو غير دقيقة أو غير حالية أو غير مكتملة ، يحق لنا تعليق أو إنهاء حسابك ورفض أي استخدام حالي أو مستقبلي للموقع (أو أي جزء منه).</p>
+                    <p>لا يجوز لك استخدام الموقع أو عروض السوق لأي غرض غير قانوني أو غير مصرح به ولا يجوز لك ، في استخدام عروض السوق ، أن تنتهك أي قوانين. من بين عروض السوق غير المصرح بها ما يلي: المسكنات من أي نوع؛ المخدرات غير المشروعة أو غيرها من المنتجات غير المشروعة ؛ المشروبات الكحولية؛ العاب الحظ؛ والمواد الإباحية أو الرسوم البيانية للبالغين أو الصور أو غيرها من منتجات الكبار. قد يؤدي نشر أي منتجات أو محتوى غير مصرح به إلى إنهاء حسابك وفرض حظر دائم على استخدام الموقع.</p>
+                    <p>نحن جهة تقديم خدمـة ولا نقدم أي إقرارات فيما يتعلق بالسلامة والفعالية والكفاية والدقة والتوافر والأسعار والتصنيفات والمراجعات أو قانونية أي من المعلومات الواردة في الموقع أو عروض السـوق المعروضـة أو المقدمـة عبر الموقع. إنك تدرك وتوافق على أن محتوى الموقع لا يحتوي أو يُشكل تمثيلات يمكن الاعتماد عليها بشكل معقول ، وأنت توافق على أننا غير معرضين للضرر بسبـب أي أخطاء أو سهو أو تحريفات موجودة في محتوى الموقع. نحن لا نؤيـد أو نوصي بأي عروض فـي السوق ، وقد تم توفير الموقـع لأغراض إعلامية وإعلانية فقط.</p>
+                    <p><strong><u>تسجيل المستخدم</u></strong></p>
+                    <p>&nbsp;قد يُطلب منك التسجيل في الموقع من أجل الوصول إلى عروض السوق. أنت توافق على الحفاظ على سرية كلمة المرور الخاصة بك وستكون مسؤولاً عن كل استخدام لحسابك وكلمة المرور الخاصة بك. نحن نحتفظ بالحـق في إزالة أو استعادة أو تغيير اسم المستخدم الذي تحدده إذا قررنا ، حسب تقديرنا الخاص ، إذا كان اسم المستخدم هذا غير مناسب أو فاحش أو غير مقبول بأي شكل آخر.</p>
+                    <p><strong><u>عروض السوق</u></strong></p>
+                    <p>نحن نبذل قصارى جهدنا لكي نعرض بدقة أكبر قدر الإمكان كل من الألوان والميزات والمواصفات والتفاصيل الخاصـة بعروض السوق المتاحة على الموقع. ومع ذلك ، فإننا لا نضمـن أن تكون الألوان والخصائص والمواصفات والتفاصيـل الخاصة بعروض السوق دقيقة أو كاملة أو موثوقة أو حديثة أو خالية من الأخطاء الأخرى ، وقد لا تعكس شاشة العرض الإلكترونية الخاصـة بك بدقة الألوان الحقيقيـة وتفاصيل المنتجات. تخضع جميع عروض السوق لمدى توافرها ، ولا يمكننا ضمان أن تكون عروض السوق متوفرة كمخزون لدينا فى المخزن. قد تتوفر عروض سوف معينة حصريًا عبر الإنترنت من خلال الموقع. قد تكون عروض السـوق هذه ذات كميات محدودة وتخضع للاسترجاع أو التبادل فقط وفقًا لسياسة الإرجاع الخاصة بنا.</p>
+                    <p>نحتفظ بالحق في الحد من كميات عروض السوق المعروضة أو المتاحة على الموقع. تخضع جميع أوصاف عروض السوق أو تسعيرها للتغيير في أي وقت دون إشعار ، وفقًا لتقديرنا الخاص. نحن نحتفظ بالحق في التوقف عن أي عروض السوق في أي وقت ولأي سبب.<br /> نحن لا نضمن أن جودة أي من عروض السوق التي قمت بشراءها سوف تحقق توقعاتك أو أنه سيتم تصحيح أي أخطاء في الموقع.</p>
+                    <p><strong><u>المشتريات والدفع</u></strong></p>
+                    <p>&nbsp;نقبل طرق الدفع التالية:<br /> - بطاقة الفيزا <br /> - ماستر كارد (بطاقة ائتمان)<br /> - سداد<br /> - الدفع عند التسليم (يسري بناءً على الشروط)</p>
+                    <p>أنت توافق على إنجاز شراء حالى وكامل ودقيق ، وتقديم بيانات حساب لجميع عمليات الشراء لعروض السوق التـي تتم عبر الموقع. كما توافق أيضًا على تحديث معلومات الحساب والدفع على الفور ، بما في ذلك عنـوان البريد الإلكتروني وطريقة الدفع وتاريخ انتهاء صلاحيـة بطاقة الدفع ، حتى نتمكن من إكمال معاملاتك والاتصال بك عند الحاجة. يجوز لنا تغيير الأسعار في أي وقت.</p>
+                    <p>أنت توافق على دفع جميع الرسوم بالأسعار السارية على مشترياتك وكذلك أي رسوم شحن سارية، وتسمح لنا بالتحصيل من مزود الدفع الذي اخترته لأي مبالغ عند تقديم طلبك. نحن نحتفظ بالحق في تصحيح أي أخطاء أو عدم صحة أى تقدير في الأسعار ، حتى إذا كنا قد طلبنا نفس المبلغ بالفعل أو تلقينا دفعة منه.</p>
+                    <p>نحن نحتفظ بالحق في رفض أي طلب يتم إنجازه من خلال الموقع. يجوز لنا ، حسب تقديرنا وحدنا ، تقييد أو إلغاء الكميات المشتراة لكل شخص ، ولكل أسرة ، أو لكل طلب. قد تتضمن هذه القيود الطلبات التـي يتم تقديمها بواسطة حساب العميـل نفسه أو بموجبه ، أو طريقة الدفع نفسها ، و / أو الطلبات التي تستخدم نفس عنوان الفواتير أو عنوان الشحن. نحن نحتفظ بالحق في تقييد أو حظر الطلبات التي ، في تقديرنا الوحيد ، يبدو أنها توضع من قبل التجار أو البائعين أو الموزعين</p>
+                    <p><strong><u>سياسة الارتجاع</u></strong></p>
+                    <p>يرجى مراجعة سياسة الإرتجاع المنشورة على الموقع قبل إجراء أي عمليات شراء.</p>
+                    <p><strong><u>&nbsp;</u></strong></p>
+                    <p><strong><u>الأنشطة المحظورة</u></strong></p>
+                    <p>لا يجوز لك الوصول إلى الموقع أو استخدامه لأي غرض بخلاف تلك الأغراض التي نوفرها بالموقع. لا يجوز استخدام الموقع فيما يتعلـق بأي مساعي تجارية باستثناء تلك التي تم اعتمادها أو الموافقة عليها من قبلنا.</p>
+                    <p>بصفتك مستخدمًا للموقع ، فإنك توافق على عدم: القيام بمايلى:</p>
+                    <ol>
+                        <li>استرجاع البيانات أو أي محتوى آخر بشكل منهجـي من الموقع لإنشاء أو تجميع ، بشكل مباشر أو غير مباشر ، مجموعة أو تصنيـف أو قاعدة بيانات أو دليل بدون إذن كتابي منا.</li>
+                        <li>إجراء أي استخدام غير مصرح به لعروض السوق ، بما في ذلك جمع أسماء المستخدمين و / أو عناوين البريد الإلكتروني للمستخدمين بواسطة وسائل إلكترونية أو غيرها لغرض إرسال بريد إلكتروني غير مرغوب فيه ، أو إنشاء حسابات مستخدمين بوسائل آلية أو تحت ذرائع كاذبة.</li>
+                        <li>المشاركة في تأطير غير مصرح به أو ربطه بالموقع.</li>
+                        <li>الخداع أو الاحتيال أو التضليل لنا ولغيرنا من المستخدمين ، خاصة في أي محاولة لتعلم معلومات حساب حساسة مثل كلمات مرور المستخدم</li>
+                        <li>عمل استخدام غير صحيح لخدمات الدعم المقدمة منا أو تقديم تقارير كاذبة عن سوء المعاملة أو سوء السلوك.</li>
+                        <li>المشاركة في أي استخدام آلي للنظام ، مثل استخدام البرامج النصية لإرسال تعليقات أو رسائل ، أو استخدام أي فحص للبيانات لوضع بيانات جديدة ، أو أعمال الروبوتات ، أو أدوات مماثلة لجمع البيانات واستخراجها.</li>
+                        <li>التدخل في أو تعطيل أو إنشاء عبء لا داعى له على الموقع أو الشبكات أو الخدمات المرتبطة بالموقع.</li>
+                        <li>محاولة انتحال شخصيـة مستخدم أو شخص آخر أو استخدام اسـم مستخدم يخص مستخدم آخر.</li>
+                        <li>بيع أو نقل ملف التعريف الخاص بك.</li>
+                        <li>استخدام أي معلومات تم الحصول عليها من الموقـع من أجل التحرش أو الإساءة أو إيذاء شخص آخر.</li>
+                        <li>استخدم عروض السوق كجزء من أي جهد للتنافس معنا أو استخدام الموقع و / أو المحتوى لأي مسعى أو مؤسسة تجارية محققة للإيرادات.</li>
+                        <li>حل شفرة أو تغيير كود أو فك أو عكس هندسة أي برنامج بالموقع أو يشتمل على جزء من الموقع بأي طريقة.</li>
+                        <li>محاولة تجاوز أي تدابير للموقع مصممـة لمنع أو تقييد الوصول إلى الموقع ، أو أي جزء منه.</li>
+                        <li>مضايقة أو إزعاج أو تخويف أو تهديد أي موظف من موظفينا أو وكلائنا الذين يعملون في تقديم أي جزء من عروض السوق إليكم.</li>
+                        <li>القيام بحذف حقوق الطبع والنشر أو أي حقوق ملكية أخرى من أي محتوى.</li>
+                        <li>نسخ أو تعديل برنامج الموقع ، بما في ذلك ، على سبيل المثال لا الحصر ، Flash ، أو PHP ، أو HTML ، أو JavaScript ، أو أي كود آخر.</li>
+                        <li>تحميـل أو نقل (أو عمـل أي محاولة لتحميـل أو لنقل) الفيروسات أو أحصنـة طروادة أو أي مواد أخـرى ، بما في ذلك الاستخدام المفرط للحروف الكبيـرة والرسائل غير المرغوب فيها (النشر المستمـر للنصوص المتكـررة) ، التي تتعارض مع الاستخدام المستمـر لأي طرف والاستمتاع بالموقـع أو تعديـل أو إعاقة أو تعطيل أو تغييـر أو التعارض مع استخدام ميزات السـوق أو وظائفـه أو عملياتـه أو صيانته.</li>
+                        <li>تحميل أو نقل (أو عمل أى محاولة لتحميل أو لنقل) أي مادة تعمـل بمثابة وسيلة آلية نشطة أو جماعية لجمـع المعلومات أو إرسالها ، بما في ذلك على سبيل المثال لا الحصر ، تنسيقات تبادل الرسومات الواضحة ("gifs") ، 1 &times; 1 بكسل ، وأخطاء الويب أو ملفات تعريف الارتباط أو أي أجهزة أخرى مشابهة (التي يشار إليها أحيانًا باسم "برامج التجسس" أو "آليات التجميع السلبي".</li>
+                        <li>باستثناء ما قد ينتج عن استخدام محرك البحث القياسي أو استخدام متصفح الإنترنت ، أن يقوم باستخدام أو إطلاق أو تطوير أو توزيع أي نظام آلي ، بما في ذلك على سبيل المثال لا الحصر ، أي عنكبوت spider أو روبوت أو أداة خداع أو مكشطة scraper أو قارئ دون اتصال بالانترنت يصل إلى الموقع ، أو استخدام أو تشغيل أي برنامج نصي غير مصرح به أو أى برامج أخرى.</li>
+                        <li>استخدام الموقع بطريقة تتعارض مع أي قوانين أو لوائح سارية.</li>
+                        <li>الاستهانة بنا أو تلويث سمعتنا أو إحداث أى ضرر آخر ، في رأينا ، سواء يلحق بنا و / أو بالموقع.</li>
+                        <li>استخدم الموقع للإعلان أو عرض بيع السلع والخدمات.</li>
+                        <li>التحايل أو التعطيل أو التداخل مع ميزات الأمان المتعلقة بالموقع ، بما في ذلك الميزات التي تمنع أو تقيد استخدام أو نسخ أي محتوى أو تفرض قيودًا على استخدام الموقع و / أو المحتوى الموجود فيه.</li>
+                    </ol>
+                    <p><strong><u>&nbsp;</u></strong></p>
+                    <p><strong><u>مبادئ توجيهية للتعليق</u></strong></p>
+                    <p>قد نوفر لك مناطق على الموقع لترك تعليقات أو تقييمات. عند نشر التعليق ، يجب أن تمتثل للمعايير التاليـة: (1) يجـب أن يكون لديك تجربـة مباشـرة مع الشخـص / الكيان قيد التعليق ؛ (2) يجب ألا تحتوي تعليقاتك على لغة بذيئة مسيئة أو لغة متعسفة أو عنصرية أو عدائية أو تؤدى إلى الكراهية. (3) يجـب ألا تحتوي التعليقات الخاصـة بك على مراجع تمييزية على أساس الدين أو العرق أو الجنس أو الأصل القومي أو السن أو الحالة الاجتماعية أو الميول الجنسيـة أو الإعاقة ؛ (4) يجب ألا تتضمـن التعليقات الخاصة بك إشارات إلى نشاط غير قانوني ؛ (5) يجب أن لا تكـون تابعاً للمنافسيـن في حالة نشر تعليقات سلبية ؛ (6) يجب أن لا تقدم أي استنتاجات فيما يتعلـق بشرعية السلوك ؛ (7) لا يجوز لك نشر أي بيانات خاطئة أو مضللة ؛ و (8) لا يجوز لك تنظيم حملة تشجع الآخرين على نشر التعليقات ، سواء كانت إيجابية أو سلبية.</p>
+                    <p>يجوز لنا قبول التعليقات أو رفضها أو إزالتها وفقًا لتقديرنا الخاص. ليس لدينا أي التزام على الإطلاق بعرض التعليقات أو حذف التعليقات ، حتى إذا اعتبر أي شخص أن التعليقات مرفوضة أو غير دقيقة. لم يتم اعتماد التعليقات من قبلنا ، ولا تمثل بالضرورة آراءنا أو آراء أي من الشركات أو الشركاء التابعين لنا. نحـن لا نتحمل أي مسؤولية عن أي تعليقات أو عن أي مطالبات أو التزامات أو خسائر ناجمة عن أي تعليقات. من خلال نشر أي تعليقات ، فإنك تمنحنا هنا حقًا دائمًا ، غير حصريًا ، عالميًا ، خاليًا من الإتاوات ، مدفوع الأجر بالكامـل ، قابل للتنازل، و ترخيصًا ثانويًا لإعادة الإنتاج أو التعديل أو الترجمة أو النقل بأي وسيلة أو عرض أو أداء و / أو توزيع كل المحتوى المتعلق بالتعليقات.</p>
+                    <p><strong><u>رخصة استخدام المحمول</u></strong></p>
+                    <p><strong><u>استخدام الترخيص</u></strong></p>
+                    <p>إذا قمت بالوصول إلى عروض السوق عن طريق تطبيق محمول ، فنحن نمنحك حقًا محدودًا وغير قابل للإلغاء وغير قابل للتحويل ، لتثبيـت واستخدام تطبيـق الهاتف المحمول على الأجهزة الإلكترونية اللاسلكيـة التي تمتلكها أو تتحكم فيها بمعرفتك ، وللوصول إلي تطبيق الهاتف المحمول واستخدامه علـى مثل هذه الأجهـزة بشكل صارم وفقا لشروط وأحكام ترخيص تطبيقات الهاتف المحمول هذا الواردة في شروط الاستخدام هذه. لا يجوز لك ما يلي: (1) فك الشفرات، الهندسة العكسية ، التفكيك ، محاولة اشتقاق شفرة المصدر ، أو فك تشفير التطبيق ؛ (2) إجراء أي تعديل أو تأقلم أو تحسيـن أو تعزيز أو ترجمـة أو عمل اشتقاقي من التطبيق ؛ (3) انتهاك أي قوانين أو قواعد أو لوائح معمول بها فيما يتعلق بوصولك إلى التطبيق أو استخدامه ؛ (4) إزالة أو تغيير أو حجب أي إشعار ملكية (بما في ذلك أي إشعار حقوق التأليف والنشر أو العلامة التجارية) التي تم نشرها عن طريقنا أو عن طريق الجهات المرخص لها بالتطبيق ؛ (5) استخدام التطبيق لأي مسعـى مدر للدخل ، أو مشروع تجاري ، أو أي غرض آخر غير الغرض الذى تم تصميمه أو إنتاجه من أجله ؛ (6) جعل التطبيق متاحاً عبر شبكة أو بيئة أخرى تسمح بالوصول أو الاستخدام من قبـل العديد من الأجهزة أو المستخدمين في نفس الوقت ؛ (7) استخدام التطبيق لإنشاء منتج أو خدمة أو برنامج يكون ، بشكل مباشر أو غير مباشر ، منافسًا للتطبيـق أو بأي طريقـة أخرى يكون بديلاً له؛ (8) استخدام التطبيق لإرسال استعلامات آلية إلى أي موقع إلكتروني أو إرسال أي بريد إلكتروني تجاري غير مرغوب فيه ؛ أو (9) استخدام أي معلومات ملكية أو أي واجهة من واجهاتنا أو ملكيتنا الفكرية الأخرى في تصميـم أو تطوير أو تصنيع أو ترخيص أو توزيع أي تطبيقات أو ملحقات أو أجهزة للاستخدام مع التطبيق</p>
+                    <p><strong><u>أجهزة أبل وأندرويد</u></strong></p>
+                    <p>تسري الشروط التالية عند تقوم باستخدام تطبيق جوال تم الحصول عليه من متجر أبل أو جوجل بلاى (وكل منها يسمى "موزع تطبيق") للدخول إلى عروض السوق: (1) الترخيص الممنوح لك لتطبيقات الهاتف المحمول الخاص بنا يقتصر على كونه ترخيص غير قابل للنقل لاستخدام التطبيق على جهاز يستخدم أنظمة التشغيل أبل أيوس أو أندرويد ، حسب مقتضى الحال ، ووفقًا لقواعد الاستخدام المنصوص عليها في بنود خدمة موزع التطبيق السارية ؛ (2) نحن مسؤولون عن تقديم أي خدمات صيانة ودعم فيما يتعلق بتطبيق الهاتف المحمول كما هو محدد في شروط وأحكام ترخيص تطبيقات الهاتف المحمول هذه الواردة في شروط الاستخدام هذه أو كما هو مطلوب بموجب القانون المعمول به ، وأنت تقر بأن كل موزع من موزعى التطبيقات ليس عليه أي التزام على الإطلاق من حيث تقديم أي خدمات صيانة ودعم فيما يتعلق بتطبيقات الهاتف المحمول ؛ (3) في حال حدوث أي إخفاق في خدمات الهاتف المحمول من حيث الامتثال لأي ضمان سارٍ ، يجوز لك إبلاغ موزع التطبيق المناسب ، وقد يقوم موزع التطبيق وفقًا لشروطه وسياساته ، برد سعر الشراء ، إن وجد ، الذي تم دفعه ثمناً لتطبيق الهاتف المحمول ، وإلى الحد الأقصى المسموح به بموجب القانون المعمول به ، لن يكون لموزع التطبيقات أي التزام آخر على الإطلاق فيما يتعلق بتطبيق الهاتف المحمول ؛ (4) أنك تقر وتضمن أنك (أ) لا تقيم في بلد يخضع لحظر حكومي أمريكي ، أو تم تحديده من قبل الحكومة الأمريكية على أنه بلد "يدعم الإرهاب" ، و (ب) أنك غير مدرج في أي قائمة حكوميـة أمريكية للأطراف المحظورة أو المقيدة ؛ (5) يجب عليك الالتزام بشروط اتفاقية الطرف الثالث المطبقة عند استخدام تطبيق الهاتف المحمول ، على سبيـل المثال ، إذا كان لديك تطبيـق فويب (انتقال الصوت عبر بوتوكول الانترنت) ، فيجب ألا تنتهك اتفاقية خدمة البيانات اللاسلكية الخاصة بهم عند استخدام تطبيق الهاتف المحمول ؛ (6) تقر وتوافق على أن موزعي التطبيقات هم موزعون مستفيدون من أطراف ثالثة بموجب الشروط والأحكام الواردة في ترخيص تطبيق الهاتف المحمول هذا المتضمن في شروط الاستخدام هذه ، وأن كل موزع للتطبيقات سيكون له الحق (وسيتم اعتباره كأنه قد قبل الحق) في إنفاذ الشروط والأحكام الواردة في ترخيص تطبيقات الهاتف المحمول هذه الواردة في شروط الاستخدام هذه ضدك كمستفيد من الطرف الثالث.</p>
+                    <p><strong><u>وسائل الإعلام الاجتماعي</u></strong></p>
+                    <p>كجزء من وظائف الموقع ، يمكنك ربط حسابك بحسابات التى تملكها عبر الإنترنت مع موفري خدمات مقدمة من أطراف ثالثة (وكل حساب من هذه الحسابات يعتبر "حساب مقدم لك من طرف ثالث") إما عن طريق: (1) توفير بيانات تسجيل الدخول للحساب المقدم لك من الطرف الثالث الخاص بك من خلال الموقع. أو (2) السماح لنا بالوصول إلى الحساب المقدم لك من الطرف الثالث الخاص بك ، كما هو مسموح به بموجب الأحكام والشروط السارية التي تحكم استخدامك لكل حساب مقدم من طرف ثالث. أنت تقر وتضمن أنه يحق لك الكشف عن معلومات تسجيل الدخول الخاصة بالحساب المقدم من الطرف الثالث لنا و / أو تمنحنا حق الوصول إلى الحساب المقدم لك من الطرف الثالث الخاص بك ، دون انتهاك من جانبك لأي من الشروط والأحكام التي تحكم استخدامك للحساب المقدم لك من الطرف الثالث ، ودون إلزامنا بدفع أي رسوم أو جعلنا خاضعين لأي قيود استخدام مفروضة من قِبل مقدم الخدمة التابع للطرف الثالث. من خلال منحنا حق الوصول إلى أي حسابات مقدمة إليك من طرف ثالث ، فإنك تدرك أنه: (1) يجوز لنا الوصول إلى ، وتوفير ، وتخزين (إن أمكن) أي محتوى قمت بتوفيره وتخزينه في الحساب المقدم من طرف ثالث ("محتوى الشبكة الاجتماعية") بحيث يكون متاحًا في الموقع وعبره عبر حسابك ، بما في ذلك على سبيل المثال لا الحصر أي قوائم تضم أصدقاء لك و (2) قد نقوم بإرسال معلومات إضافيـة لحسابك المقدم من الطرف الثالـث واستلامها إلى الحد الذي يتم إعلامك به عند ربط حسابك مع الحساب المقدم من الطرف الثالـث. وطبقا لحسابات الطرف الثالث التي تختارها والتي تخضع لإعدادات الخصوصية التي قمت بتعيينها في مثل هذه الحسابات التابعة لجهات ثالثة ، قد تكون معلومات التعريف الشخصية الخاصة بك والتي تقوم بنشرها في الحسابات المقدمة من الطرف الثالث الخاصة بك متوفرة في حسابك ومن خلاله على الموقع. يرجى ملاحظة أنه إذا أصبح الحساب المقدم إليك من طرف ثالث أو الخدمة المقترنة به غير متاح أو تم إنهاء وصولنا إلى هذا الحساب المقدم إليك من الطرف الثالث من قبل مقدم الخدمة التابع للطرف الثالث ، فقد لا يكون محتوى الشبكة الاجتماعية متاحًا على الموقع وعبره. سيكون لديك القدرة على تعطيل الاتصال بين حسابك على الموقع والحسابات المقدمـة إليك من الطرف الثالث الخاصة بك في أي وقت. يرجى ملاحظة أن علاقتك بمقدمي خدمات الطرف الثالث المرتبط بحساباتك مع الأطراف الثالثة يتم إدارتها باتفاقك مع مقدمي خدمات الأطراف الثالثة. نحن لا نبذل أي جهد لمراجعة أي محتوى يخص الشبكة الاجتماعية لأي غرض ، بما في ذلك على سبيل المثال لا الحصر ، الدقة أو الشرعية أو عدم الانتهاك ، ونحن لسنا مسؤولين عن أي محتوى موجود فى الشبكة الاجتماعية. أنت تقر وتوافق على أننا قد ندخل إلى دفتر عناوين بريدك الإلكتروني المرتبط بحساب طرف ثالث وإلى قائمة جهات الاتصال الخاصة بك المخزونة على جهازك المحمول أو الكمبيوتر اللوحي الخاص بك فقط لأغراض التحديد وإبلاغك بجهات الاتصال الأخرى التي سجلت أيضًا لاستخدام الموقع. يمكنك إلغاء الاتصال بين الموقع وحساب الطرف الثالث الخاص بك عن طريق الاتصال بنا باستخدام معلومات الاتصال المدونة أدناه أو من خلال إعدادات حسابك (إن وجدت). سنحاول حذف أي معلومات مخزنة على خوادمنا تم الحصول عليها من خلال حساب الطرف الثالث ، باستثناء اسم المستخدم وصورة الملف الشخصي المرتبطة بحسابك.</p>
+                    <p><strong><u>عمليات الإرسال/ </u></strong><strong><u>التقديمات</u></strong></p>
+                    <p>أنت تقر وتوافق على أن أية أسئلة أو تعليقات أو اقتراحات أو أفكار أو ردود أو أى معلومات أخرى تتعلق بالموقع أو بعروض السوق ("عمليات الإرسال") التي قمت بتقدمها إلينا غير سرية وأنها ستصبح ملكنا بمفردنا. سنمتلك حقوقًا حصرية ، بما في ذلك جميع حقوق الملكية الفكرية ، كما يحق لنا الاستخدام غير المقيد ونشر هذه الطلبات لأي غرض مشروع ، سواء كان هذا الغرض تجاري أو غير ذلك ، دون إقرار أو تعويض لك. أنت تتنازل بموجب هذا عن جميع الحقوق المعنوية في أي من هذه التقديمات ، وتضمن بموجب هذا أن تكون أي من هذه التقديمات أصلية من خلالك أو أن لديك الحق في تقديم مثل هذه التقديمات. أنت توافق على أنه لن يكون هناك أي حق يتم استخدامه ضدنا عند حدوث أي انتهاك مزعوم أو فعلي أو أي اختلاس لأي حق ملكية في ملفاتك المرسلة.</p>
+                    <p><strong><u>إدارة الموقع</u></strong></p>
+                    <p>نحن نحتفظ بالحـق ، ولكن ليس الالتزام ، بما يلي: (1) مراقبـة الموقع لاكتشاف مخالفات شروط الاستخدام هذه ؛ (2) اتخاذ الإجراءات القانونية المناسبة ضد أي شخص ، وفقًا لتقديرنا الخاص ، ينتهك القانون أو شروط الاستخدام هذه ، بما في ذلك على سبيل المثال لا الحصر ، إبلاغ سلطات إنفاذ القانون بهذا المستخدم ؛ (3) وفقًا لتقديرنا الخاص وحدنا وبدون تحديد، نحن نرفض أو نقيد الوصـول إلى أي من مساهماتك أو أي جزء منها ، أو الحد من توافرها أو تعطيلهـا (إلى الحد الممكـن من الناحية التقنيـة) ؛ (4) وفقًا لتقديرنا الخاص وحدنا وبدون تحديد ، أو إشعار ، أو تحمل لأى مسؤولية ، أن نقوم بإزالة من الموقع أو تعطيل جميع الملفات والمحتويات التي تكون كبيـرة في الحجم أو بأي شكل من الأشكال عبئًا على أنظمتنا ؛ و (5) إدارة الموقع بطريقة ترمي إلى حماية حقوقنا وممتلكاتنا وتسهيل الأداء السليم للموقع وعروض السوق.</p>
+                    <p><strong><u>سياسة الخصوصية</u></strong></p>
+                    <p>نحن نهتم بخصوصية البيانات وأمانها. باستخدامك للموقع أو عروض السوق ، فإنك توافق على الالتزام بسياسة الخصوصية الخاصة بنا المنشورة على الموقع ، والمدمجة في شروط الاستخدام هذه. وعلاوة على ذلك ، نحن لا نقبل عن قصد أو نطلب أو نلتمس الحصول على معلومات من الأطفال أو نتسوق عن عمد للأطفال</p>
+                    <p><strong><u>المدة والإنهاء</u></strong></p>
+                    <p>تظل شروط الاستخدام هذه ساريـة المفعول والنفاذ بالكامـل أثناء استخدامك للموقع. دون الحد من أي شروط أخرى من شروط الاستخدام هذه ، فإننا نحتفظ بالحق ، بناءً على تقديرنا وحدنا وبدون الحاجة إلى عمل إشعار أو تحمل أية مسؤولية ، بأن نقوم بإلغاء الوصول إلى الموقع وعروض السوق واستخدامه (بما في ذلك حجب عناوين بروتوكول الانترنت الخاصة) ، لأي شخص لأي سبب أو بدون أى سبب ، بما في ذلك على سبيل المثال لا الحصر ، أي خرق لأي ضمانات أو توكيلات أو بنود قانونيـة مُضمنة في شروط الاستخدام أو لأي قانون أو لائحة معمول بها. قد نقوم بإنهاء استخدامك أو مشاركتك في الموقع وعروض السوق أو حذف حسابك مع أي محتوى أو معلومات قمت أنت بإرسالها في أي وقت دون أي تحذير ، وذلك بناء على تقديرنا الوحيد.</p>
+                    <p>إذا قمنا بإنهاء حسابك أو تعليقه لأي سبب من الأسباب ، يُحظر عليك التسجيل وإنشاء حساب جديد باسمك ، أو تحت اسم مزيف أو مستعار ، أو باسم أي طرف ثالث ، حتى إذا كنت تتصرف نيابة عن هذا الطرف الثالث. وبالإضافة إلى إنهاء حسابك أو تعليقه ، نحتفظ بالحق في اتخاذ الإجراء القانونـي الملائم ، بما في ذلك على سبيل المثال لا الحصر السعي الحصول على تعويض مدني وجنائي والتعويض من خلال آلية قانونية تضمن إمكانية المطالبة بوقف السلوك غير القانوني.</p>
+                    <p><strong><u>التعديلات والتقطعات</u></strong></p>
+                    <p>نحن نحتفظ بالحق في تغيير أو تعديل أو إزالة محتويات الموقع في أي وقت أو لأي سبب حسب تقديرنا الخاص دون سابق إنذار. ومع ذلك ، ليس لدينا أي التزام لتحديث أي معلومات منشورة على موقعنا. كما نحتفظ بالحق في تعديل أو وقف جميع عروض السوق أو جزء منها دون سابق إنذار في أي وقت. لن نكون مسؤولين تجاهك أو تجاه أي طرف ثالث عن أي تعديل أو تغيير في الأسعار أو تعليق أو وقف عرض الموقع أو عروض السوق.</p>
+                    <p>لا يمكننا ضمان أن الموقع وعروض السوق ستتوفر في جميع الأوقات. قد نعانى من الأجهزة أو البرامج أو نواجه مشاكل أخرى أو نحتاج إلى إجراء صيانة متعلقة بالموقع ، مما يؤدي إلى انقطاع أو تأخير أو أخطاء. نحتفظ بالحق في تغيير أو عرض أو تحديث أو تعليق أو وقف أو تعديل الموقع أو عروض السوق في أي وقت أو لأي سبب دون إشعارك. أنت توافق على أننا لا نتحمل أي مسؤولية مهما كانت عن حدوث أي خسارة أو ضرر أو إزعاج ناتج عن عدم قدرتك على الوصول إلى الموقع أو عروض السوق أو استخدامه أثناء أي توقف أو إيقاف يحدث للموقع أو عروض السوق.</p>
+                    <p>لن يتم تفسير أي شيء في شروط الاستخدام هذه على أنه يلزمنا بالحفاظ على الموقع أو عروض السوق ودعمهم أو تقديم أي تصحيحات أو تحديثات أو إصدارات متعلقة بذلك.</p>
+                    <p><strong><u>القانون الذي يحكم</u></strong></p>
+                    <p>&nbsp;تخضع شروط الاستخدام هذه واستخدامك للموقع وعروض السوق وتفسر وفقا لقوانين المملكة العربية السعودية المطبقة على الاتفاقيات المبرمة والتي يتم تنفيذها بالكامل داخل المملكة العربية السعودية ، بغض النظر عن تعارض مبادئ القانون.</p>
+                    <p><strong><u>حل النزاع</u></strong></p>
+                    <p>&nbsp;أى نزاع قانونى مهما كانت طبيعته يتواجد من قبلك أو من قبلنا (بشكل جماعي ، "الأطراف" و فرديًا ، "الطرف") يجب الشروع فيه أو إقامة دعاوى قضائية في المحاكم الموجودة في المملكة العربية السعودية ، ويوافق الطرفان بموجب ذلك على التنازل عن جميع الدفوع لعدم وجود ولاية قضائية شخصية ومنتدى غير ملائم فيما يتعلق بالمكان والولاية القضائية. يتم استبعاد تطبيق اتفاقية الأمم المتحدة بشأن عقود البيع الدولي للبضائع والقانون الموحد لمعاملة معلومات الكمبيوتر (UCITA) من شروط الاستخدام هذه.</p>
+                    <p><strong><u>التصحيحات</u></strong></p>
+                    <p>&nbsp;قد تكون هناك معلومات على الموقع تحتوي على أخطاء مطبعية ، أو حالات عدم دقة ، أو حالات سهو قد تتعلق بعروض السوق ، بما في ذلك الوصف ، والتسعير ، والتوافر ، ومختلف المعلومات الأخرى. نحن نحتفظ بالحق في تصحيح أي أخطاء أو عدم دقة أو سهو أو تغيير أو تحديث المعلومات على الموقع في أي وقت دون إشعار مسبق.</p>
+                    <p><strong><u>إنكار</u></strong></p>
+                    <p>لقد تم توفير الموقع وعروض السوق طبقاً للحالة الموجودة عليها وعلى أساس ماهو متوفر. أنت توافق على أن استخدامك للموقع والخدمات الخاصة بك سيكون على مسؤوليتك وحدك. إلى أقصى حد يسمح به القانون ، فإننا نتنازل عن جميـع الضمانات ، سواء الصريحة منها أو الضمنية ، فيما يتعلق بالموقع أو عروض السوق واستخدامك لهما بموجب ذلك ، وبما في ذلك ، وبدون تحديد ، الضمانات الضمنية لرواج الإتجار، والملائمـة لغرض معين ، وعدم انتهاك القوانين. نحن لا نقدم أي ضمانات أو بيانات حول دقة أو اكتمال محتوى الموقع أو محتوى أي مواقع مرتبطة بموقعنا ولن نتحمل أي مسئوليـة أو التزام عن أي حالة من الحالات التالية (1) حدوث أخطاء أو إساءة فهم أو عدم دقة المحتويات والمواد ، (2) إصابة شخصية أو أضرار في الممتلكات ، من أي طبيعة على الإطلاق ، الناتجة عن وصولك إلى الموقع واستخدامه ، (3) أي وصول غير مصرح به إلى أو استخدام خوادمنا الخاصة و / أو أي وجميع المعلومات الشخصية و / أو المعلومات المالية التي تم تم تخزينها ، (4) أي انقطاع أو توقف للانتقال إلى أو من الموقع أو عروض السوق ، (5) أي إصابة عن طريق فيروسات ، أحصنة طروادة (برامج مصممة لخرق أمن نظام الكمبيوتر)، أو مثيلاتها من البرامج التي قد يتـم نقلها إلى أو من خلال الموقع من قبل أي طرف ثالث ، و / أو (6) أي أخطاء أو حذف يحدث في أي من المحتويات والمواد أو أي خسائر أو أضرار من أي نوع كانت نتيجة لاستخدام أي محتوى تم نشره أو نقله أو غير ذلك من الخدمات المتاحـة عبر الموقع. نحن لا نؤكد ، أو نصادق على ، أو نتكفل أو نتحمل المسؤولية عن أي منتج أو خدمة يتم الإعلان عنها أو عرضها من قبل طرف ثالث من خلال الموقع ، أو أي موقع ويـب موسّع ، أو أي موقع ويـب أو تطبيق محمول مميز في أي إعلان أو إعلانات أخرى ، ولن نكون طرفا أو مسئولين بأي طريقة عن مراقبة أي معاملات بينك وبين أي من مقدمي خدمات أو منتجات من أطراف ثالثة. كما هو الحال عند شراء منتج أو خدمة من خلال أي طرف وسيط أو في أي بيئة ، يجب عليك استخدام أفضل وسائل الحكم الخاص بك وتوخى الحذر عند الحاجة.</p>
+                    <p><strong><u>حدود المسؤولية</u></strong></p>
+                    <p>في أي حال من الأحوال ، لن نكون نحن أو مديرينا أو موظفينا أو وكلائنا مسؤولين تجاهك أو تجاه أي طرف ثالث عن أية أضرار مباشرة أو غير مباشرة أو ناتجة أو عرضية أو خاصة أو عقابية بما في ذلك الأرباح الضائعة والإيرادات المفقودة وفقدان البيانات ، أو الأضرار الأخرى الناشئة عن استخدامك للموقع أو عروض السوق ، حتى إذا تم إعلامنا باحتمالية حدوث هذه الأضرار. وبغض النظر عن أي شيء يتناقض مع المحتويات الموجودة هنا ، فإن مسؤوليتنا تجاهك عن أي سبب وبغض النظر عن صيغة الإجراء ، ستقتصر في جميع الأوقات على المبلغ المدفوع ، إن وجد ، من قبلك لنا. قد لا تنطبق بعض أو جميع عمليات الإنكار أو التحديد المذكورة أعلاه عليك ، وقد تكون لك حقوق إضافية.</p>
+                    <p><strong><u>التعويض</u></strong></p>
+                    <p>أنت توافق على الدفاع ، والتعويض ، وإبعاد الضرر عنا ، بما في ذلك الشركات الفرعية والشركات التابعة لنا ، وجميع الموظفين والمسئولين والشركاء والموظفين المعنيين ، من أي خسارة أو ضرر أو التزام أو مطالبة أو طلبات ، بما في ذلك أتعاب ومصاريف المحاماة المعقولة ، التي يقوم بها أي طرف ثالث بسبب أو ناشئة عن: (1) استخدام عروض السوق ؛ (2) خرق شروط الاستخدام هذه ؛ (3) أي خرق للتأكيدات الخاصة بك والضمانات المنصوص عليها في شروط الاستخدام هذه ؛ (4) انتهاكك لحقوقك أى طرف ثالث ، بما في ذلك على سبيل المثال لا الحصر حقوق الملكية الفكرية ؛ أو (5) أي تصرف ضار صريح تجاه أي مستخدم آخر للموقع أو عروض السوق التي قمت بالاتصال بها عبر الموقع. وبغض النظر عما سبق ، نحتفظ بالحق ، على نفقتك الخاصة ، في أن تتولى الدفاع والسيطرة الحصريين على أي مسألة تتطلب منك تعويضنا ، وأنت توافق على التعاون ، على نفقتك الخاصة ، مع دفاعنا عن هذه المطالبات. سنبذل جهودًا معقولة لإخطارك بأي من هذه المطالبات أو الإجراءات أو الدعاوى القضائية التي تخضع لهذا التعويض عند علمنا بذلك.</p>
+                    <p><strong><u>&nbsp;</u></strong></p>
+                    <p><strong><u>بيانات المستخدم</u></strong></p>
+                    <p>سنحافظ على بيانات معينـة تقوم بنقلها إلى الموقـع لغرض إدارة أداء عروض السوق ، بالإضافة إلى البيانات المتعلقـة باستخدامك لعروض السوق. على الرغم من قيامنا بإجراء عمليات نسخ احتياطي روتينيـة منتظمة للبيانات ، فإنك وحدك المسؤول عن جميع البيانات التي تقوم بنقلها أو التي تتعلق بأي نشاط قمت به باستخدام عروض السوق. أنت توافق على أننا لن نتحمل أية مسؤولية تجاهك عن أي خسارة أو تلف لأي من هذه البيانات ، وتتنازل بموجبه عن أي حق من حقوق اتخاذ أى إجراءات ضدنا ينشأ عن مثل هذه الخسارة أو التلف الذي قد يحدث لهذه البيانات.</p>
+                    <p><strong><u>الاتصالات والمعاملات والتوقيعات الإلكترونية</u></strong></p>
+                    <p>زيارة الموقع وإرسال رسائل البريد الإلكتروني وإكمال النماذج عبر الإنترنت ، كلها تعتبر اتصالات إلكترونيـة. أنت توافـق على تلقي الاتصالات الإلكترونية ، وأنت توافق على أن جميع الاتفاقيات والإخطارات والبيانات التي يتم الإفصاح عنها وغيرها من الاتصالات التي نقدمها إليك إلكترونيا ، عبر البريد الإلكتروني وعلـى الموقع ، تلبي أي متطلبات قانونية بأن يكـون هذا التواصـل كتابيًا. أنت توافق بموجـب هذه الوثيقة على استخدام التوقيعات الإلكترونية والعقود والأوامر والسجلات الأخرى والتوصيل الإلكتروني للإشعارات والسياسات وسجلات المعاملات التي تم إجراؤها أو إكمالها من قبلنا أو من خلال الموقع. كما أنك تتنازل بموجب هذه الوثيقة عن أي حقوق أو متطلبات بموجب أي قوانين أو لوائح أو قواعد أو قرارات رسمية أو أى قوانيـن أخرى تتم في أي دائرة قضائية تتطلب توقيعًا أو تسليمًا أ أصليًا و الاحتفاظ بسجلات غير إلكترونيـة أو عن الدفعات أو منح ائتمانات بأية وسيلة أخرى غير الوسائل الإلكترونية.</p>
+                    <p><strong><u>متنوع</u></strong><strong><u>ات</u></strong></p>
+                    <p>تشكل شروط الاستخدام هذه وأي سياسات أو قواعد تشغيـل تم نشرها من قبلنا على الموقع أو فيما يتعلق بعروض السوق الاتفاقيـة الكاملة والتفاهم بينك وبيننا. إن إخفاقنا في ممارسة أو تطبيق أي حق أو شرط من شروط الاستخدام هذه لن يكـون بمثابة تنازل عن هذا الحق أو الحكـم. تعمـل شروط الاستخدام هذه إلى أقصى حد مسموح به بموجب القانون. قد نقوم بتلبية أي حق من حقوقنا أو كل حقوقنا والتزاماتنا تجاه الآخرين في أي وقت. لن نكون ملتزمين أو مسؤولين عن أي خسارة أو ضرر أو تأخيـر أو فشل في التصرف لأي سبب خارج عن سيطرتنا المعقولة. إذا تم تحديد أي حكمأو جزء من حكم من أحكام الاستخدام هذه على أنه غير قانوني أو باطل أو غير قابل للتنفيذ ، فإن هذا الحكم أو جزء من الحكم يعتبر قابل للفصل من شروط الاستخدام هذه ولا يؤثر على صلاحية ونفاذ أي حكم أو شرط من الشروط الأخرى المتبقية. لا يوجد أي مشروع مشترك أو علاقة شراكة أو توظيف أو علاقة وكالة بينك وبيننا كنتيجـة لشروط الاستخدام هذه أو استخدام عروض السـوق. أنت توافق على أن شروط الاستخدام هذه لن يتم تفسيرها ضدنا بحكم أننا الجهة التى قامت بصياغتها. كما أنك تتنازل بموجب هذه الاتفاقية عن أى دفاع وعن جميع الدفاعات التي قد تكون لديك بناءً على النموذج الإلكتروني لشروط الاستخدام هذه وعدم وجود توقيع من جانب الأطراف المعنية لتنفيذ شروط الاستخدام هذه.</p>
+                    <p><strong><u>اتصل بنا</u></strong></p>
+                    <p>لحل شكوى بخصوص الموقع أو عروض السوق أو لتلقي مزيد من المعلومات بشأن استخدام الموقع أو عرض السوق ، يرجى الاتصال بنا حسب البيانات التالية:</p>
+                    <p>"متجر الهدية السهلة لتقنية المعلومات" Easy Gift</p>
+                    <p>رقم السجل التجاري: 1010703592<br /> شارع يوسف البزاز<br /> المزار الشمالي<br /> الرياض ، 12334<br /> المملكة العربية السعودية<br /> الهاتف: +966 11-4812228<br /><a href="mailto:info@easygift.netالبريد">البريد</a> الالكتروني: info@easygift.net</p>
+                    <p>محتوى ويب مكون من <a href="https://html-online.com/">محرر هتمل المجاني عبر الإنترنت</a>. الرجاء شراء عضوية لإزالة الرسائل الترويجية مثل هذه الرسالة.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="deliveryModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+            <div class="modal-body rtl">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                    <h4 class="modal-title">سياسة التسليم</h4>
+                </div>
+                <!-- 16:9 aspect ratio -->
+                <div class="modal-content" style="padding: 10px; max-height: 400px; overflow: auto">
+                    <p><strong><u>معلومات عامة</u></strong></p>
+                    <p>جميع الطلبات تخضع لتوافر المنتجات. إذا لم يكن العنصر موجوداً ضمن المخزون في الوقت الذي قام فيه المستخدم بوضع طلب الشراء الخاص به ، فسوف يقوم "متجر الهدية السهلة لتقنية المعلومات " بإخطاره واسترداد المبلغ الإجمالي لطلبكم ، باستخدام طريقة الدفع الأصلية. (لمزيد من التفاصيل ، يرجى مراجعة سياسة إعادة المال والإرجاع).&nbsp;</p>
+                    <p><strong><u>موقع التسليم</u></strong></p>
+                    <p>بعض البنود التي يقدمها "متجر الهدية السهلة لتقنية المعلومات " متوفرة فقط للتسليم إلى العناوين في الرياض ، المملكة العربية السعودية مثل العناصر الحساسة وتحتاج إلى التسليم في حالة مبرد. ستكون بقية البنود متاحة كما هو مذكور في التطبيق والموقع الإلكترونى.</p>
+                    <p><strong><u>موعد التسليم</u></strong></p>
+                    <p>سيتم إعلامكم بموعد التسليم المقدر بمجرد تلقى طلبكم. يتم تقدير أوقات التسليم بحيث تبدأ من تاريخ الشحن ، بدلاً من تاريخ الطلب. يتم استخدام أوقات التسليم كدليل فقط ، وهى تخضع لقبول طلبكم والموافقة عليه وتأكيده.</p>
+                    <p>ما لم تكن هناك ظروف استثنائية، فإننا نبذل قصارى جهدنا لتلبية طلبكم في الوقت المحدد في الطلب. يوم العمل معناه من يوم الاثنين إلى يوم الجمعة، ما عدا أيام العطل.</p>
+                    <p>يرجى ملاحظة أننا لا نقوم بالشحن في أيام (الجمعة).</p>
+                    <p>&nbsp;قد يختلف تاريخ التسليم بسبب ممارسات شركة الشحن الناقلة، وموقع التسليم، وطريقة التسليم ، والبنود المطلوبة.</p>
+                    <p><strong><u>تكاليف الشحن</u></strong></p>
+                    <p>تعتمد تكاليف الشحن على طريقة التسليم التي تم اختيارها. طريقة الشحن الافتراضية الأساسية مجانية، وسيتم تحميل طرق التوصيل السريع إلى المستخدم برسوم إضافية لمرة واحدة عند اختيار طريقة التسليم، وسيتم عرض رسوم الشحن.</p>
+                    <p>قد يتم تطبيق رسوم شحن إضافية على المناطق النائية أو للبنود الكبيرة أو الثقيلة. سيتم إبلاغكم بأي رسوم على صفحة طريقة السداد.</p>
+                    <p><strong><u>البنود </u></strong><strong><u>ال</u></strong><strong><u>تالفة أثناء النقل</u></strong></p>
+                    <p>إذا كان هناك أي تلف في العبوات عند التسليم ، رجاء الاتصال بنا على الفور حسب البيانات التالية:</p>
+                    <p>الهاتف: +966 11-4812228</p>
+                    <p><a href="mailto:info@easygift.netالبريد">البريد</a> الالكترونى: <a href="mailto:info@easygift.net">info@easygift.net</a></p>
+                    <p><strong><u>الأسئلة</u></strong></p>
+                    <p>إذا كان لديكم أي أسئلة حول التسليم والشحن أو أى استفسار آخر يتعلق بطلبكم ، يرجى الاتصال بنا على:</p>
+                    <p><strong><u>اتصل بنا</u></strong></p>
+                    <p>من أجل حل شكوى بخصوص الموقع أو مكان التسويق أو العروض ، أو لتلقي مزيد من المعلومات بخصوص استخدام الموقع أو عروض مكان التسويق ، يرجى الاتصال بنا على:<br /> "متجر الهدية السهلة لتقنية المعلومات" Easy Gift</p>
+                    <p>رقم السجل التجاري: 1010703592</p>
+                    <p>شارع يوسف البزاز</p>
+                    <p>المزار الشمالي</p>
+                    <p>الرياض ، 12334</p>
+                    <p>المملكة العربية السعودية</p>
+                    <p>الهاتف: <strong>+966 11-4812228</strong></p>
+                    <p><a href="mailto:info@easygift.netالبريد">البريد</a> الالكتروني: <a href="mailto:info@easygift.net">info@easygift.net</a></p>
+                    <p>تم تحرير هذه الوثيقة باستخدام محرر محتوى الويب الفوري. جرب <a href="https://htmled.it/ar/" rel="nofollow noopener">أدوات محرر هتمل</a> عبر الإنترنت لتحويل المستندات لموقعك على الويب.</p></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="refundModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+
+            <div class="modal-body rtl">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-header">
+                    <h4 class="modal-title">سياسة إعادة المال والإرجاع</h4>
+                </div>
+                <!-- 16:9 aspect ratio -->
+                <div class="modal-content" style="padding: 10px; max-height: 400px; overflow: auto">
+                    <p>&nbsp;شكرا لكم على الشراء. نأمل أن تكون راضيًا عن عملية الشراء. ومع ذلك ، إذا لم تكن راضيًا تمامًا عن عملية الشراء لأي سبب من الأسباب ، فيمكنك إرجاعه إلينا للحصول على رد كامل للأموال أو الحصول على مستند لاستخدامه فى شراء بضائع أخرى من المتجر بنفس المبلغ أو استبداله. يرجى الاطلاع أدناه للحصول على مزيد من المعلومات حول سياسة الإرجاع الخاصة بنا.</p>
+                    <p><strong><u>المرتجعات</u></strong></p>
+                    <p>يجب ختم كل المرتجعات خلال سبعة (15) يومًا من تاريخ الشراء. يجب أن تكون جميع العناصر التي تم إرجاعها في حالة جديدة وغير مستخدمة ، مع وضع جميع العلامات والملصقات الأصلية.</p>
+                    <p><strong><u>عملية الإرجاع</u></strong></p>
+                    <p>لإرجاع أحد البنود ، يرجى إرسال بريد إلكتروني إلى خدمة العملاء على البريد الالكتروني <a href="mailto:customerservice@easygift.net">customerservice@easygift.net</a> مع صورة للبند ووصف سبب طلب الإرجاع ، بعد ذلك سيقوم "متجر الهدية السهلة لتقنية المعلومات" بمراجعة طلب المستخدم. ووفقًا لسياسة إعادة المال والإرجاع ، سيتم الموافقة عليه أو رفضه. إذا تمت الموافقة عليه ، فسوف نرسل بالبريد الإلكتروني إلى المستخدم رقم إذن إعادة البضاعة (RMA). وبعد الحصول على رقم إذن إعادة البضاعة RMA ، يتم وضع المنتج بطريقة آمنة في عبوته الأصلية ، وقم بتضمين إثبات الشراء الخاص بك إذا كان متوفراً مع رقم إذن إعادة البضاعة (RMA)، وإرسال البضاعة المرتجعة الخاصة بك إلى العنوان التالي:</p>
+                    <p>"متجر الهدية السهلة لتقنية المعلومات" Easy Gift</p>
+                    <p>شارع يوسف البزاز</p>
+                    <p>الرياض ، 12334</p>
+                    <p>المملكة العربية السعودية</p>
+                    <p>يرجى ملاحظة أن "متجر الهدية السهلة لتقنية المعلومات" سيكون مسؤولاً عن جميع رسوم إعادة الشحن. نوصي بشدة باستخدام الطريقة إلى يمكن تتبعها لإرسال البريد الخاص بمرتجعاتكم.</p>
+                    <p><strong><u>إعادة المال</u></strong></p>
+                    <p>بعد تلقي مرجعاتكم والتفتيش على حالة البند الخاص بكم، سنقوم بالتعامل معه من حيث الإرجاع أو التبديل. يرجى الانتظار لمدة خمسة عشر (20) يومًا على الأقل من تاريخ استلام العنصر الخاص بك لإقرار الإرجاع الاستبدال الخاص بكم. قد تستغرق عمليات إرجاع الأموال من 1-2 دورة فواتير لكـي تظهر في كشف حساب بطاقتكـم الائتمانية ، اعتمادًا على شركة بطاقة الائتمان الخاصة بكم. سنقوم بإعلامكم عن طريق البريد الإلكتروني عندما تتم معالجة مرتجعاتكم.</p>
+                    <p><strong><u>&nbsp;</u></strong></p>
+                    <p><strong><u>البنود المعيبة / التالفة </u></strong></p>
+                    <p>في حالة استلام المستخدم لأحد البنود المعيبة / التالفة ، يمكنه إرجاع العنصر بنفس الحالة التي استلمها عليها في الصندوق الأصلي و / أو العبوة الأصلية. بمجرد استلام "متجر الهدية السهلة لتقنية المعلومات" للبند المرتجع، سوف نقوم بفحصه ، وإذا تبين أن العنصر معيبًا أو تالفًا ، فسنعالج عملية إعادة المال مع أي رسوم شحن تم تكبدها.</p>
+                    <p><strong><u>في حالة استلام بنود (بضائع) عن طريق الخطأ</u></strong></p>
+                    <p>في الظرف غير المعتادة التي يتم فيها استلام بنود (بضائع) عن طريق الخطأ ، يمكن للمستخدم إرجاع العنصر بنفس الحالة التي تم استلامها وفي نفس الصندوق الأصلي و / أو العبوة الأصليـة بشكل سليـم. وبمجرد استلامنا للعنصر المرتجع ، سنقوم بمعالجة عملية إعادة المال مع عوائد مجانية لمدة 15 يومًا.</p>
+                    <p><strong><u>استثناءات الإعادة</u></strong></p>
+                    <p>هناك بعض السيناريوهات المعينة التي لن يدعم فيها "متجر الهدية السهلة لتقنية المعلومات" عملية الارتجاع ، وهى:</p>
+                    <ol>
+                        <li>إذا تم إرسال طلب الإرتجاع خارج الإطار الزمني المحدد ، وهو 15 يوما من تاريخ التسليم.</li>
+                        <li>إذا تم استخدام المنتج أو تلفه أو لا يكون في نفس الحالة التي تم استلامها عليها.</li>
+                        <li>فئات محددة مثل المواد المستهلكة والكعك والشوكولاته والزهور والملابس الداخلية والملابس الداخلية النسائية والجوارب والملابس المجانية الخ.</li>
+                        <li>المنتجات المعيبة التي يتم تغطيتها تحت ضمان الشركة المصنعة.</li>
+                        <li>أي عنصر قابل للاستهلاك تم استخدامه أو تثبيته.</li>
+                        <li>المنتجات ذات الأرقام التسلسلية التي تم تغييرها أو فقدها.</li>
+                        <li>أي شيء مفقود من الحزمة التي متم باستلامها بما في ذلك الملصقات ، والعبوة الأصلية ، والمجانية والملحقات.</li>
+                        <li>العناصر الهشة ، والبنود المتعلقة بالنظافة.</li>
+                    </ol>
+                    <p><strong><u>إذا غير المستخدم رأيه</u></strong></p>
+                    <p>إذا قام المستخدم بتغيير رأيه قبل استلام المنتج الخاص به ، فعليه الاتصال بـ "متجر الهدية السهلة لتقنية المعلومات " لإلغاء طلبه وستقوم شركة "متجر الهدية السهلة لتقنية المعلومات " بإعادة عملية إعالدة المال مع أي رسوم شحن مطبقة. إذا رغب المستخدم في إرجاع العنصر بعد استلامه ، فلديك ما يصل إلى 15 يومًا لإعادته ، مع مراعاة القواعد التالية:</p>
+                    <ol>
+                        <li>أن لايكون العنصر في قائمة البضائع غير القابلة للارتجاع.</li>
+                        <li>لا يمكنك إرجاع العناصر التي تم تحديدها بوضوح على أنها غير قابلة للإرجاع وعرض سياسة عدم الإرجاع.</li>
+                        <li>لا يمكن إرجاع سوى العناصر التي تحتوي على "تغليف تجزئة" (صندوق مغلق / مختوم) ولا يمكن إرجاعها إلا مع الختم الأصلي.</li>
+                    </ol>
+                    <p>&nbsp;</p>
+                    <p><strong><u>الإعادة بعد 15 يوما</u></strong></p>
+                    <p>قد تكون هناك حالات لا يتمكن فيها المستخدم من إرجاع العناصر خلال 15 يومًا ، وفي مثل هذه الحالات يجب عليه الاتصال بفريق خدمة العملاء على الرقم +966 11-4812228 أو من خلال صفحة اتصل بنا لتقديم شكوى. يتم التعامل مع الشكاوى على أساس كل حالة على حدة. ومع ذلك ، فإن جميع الارتجاعات المقبولة وفقًا لقوانين حماية المستهلك سوف تحترم المدة المحددة.</p>
+                    <p><strong><u>استرداد المال عن طريق بطاقة الائتمان</u></strong></p>
+                    <p>إذا كان المستخدم قد دفع من خلال الوسائل الإلكترونية (بطاقة الائتمان أو الخصم) ، سيتم رد المبلغ المدفوع إلى بطاقتك. قد يستغرق المبلغ المدفوع مدة تصل إلى شهر ليتم إظهاره في كشف بطاقتك ، اعتمادًا على وقت العملية التي سوف تتم في كل بنك</p>
+                    <p><strong><u>استرداد المال بأسلوب الدفع نقدًا عند الاستلام</u></strong></p>
+                    <p>إذا قام المستخدم بالدفع من خلال الدفع النقدي عند التسليم (COD) ، فسيتم استرداد الأموال على شكل رصيد من "متجر الهدية السهلة لتقنية المعلومات" ، وسيتم إضافته إلى رصيد محفظة "متجر الهدية السهلة لتقنية المعلومات" الخاص بكم. ومن خلال رصيد محفظة "متجر الهدية السهلة لتقنية المعلومات" ، يمكن للمستخدم إجراء عمليات شراء جديدة بسهولة. حالة إجراء عملية شراء بمبلغ أقل من أو يساوي رصيد محفظة "متجر الهدية السهلة لتقنية المعلومات" الخاص بكم المتاح: إذا كان إجمالي قيمة مشترياتك الجديدة بما في ذلك تكاليف الشحن أقل من أو يساوي الرصيد المتاح ، سيقوم النظام بإرشاد المستخدم أن هناك رصيد كاف في المحفظة. سيحتاج المستخدم بعد ذلك إلى النقر على "تقديم الطلب" وسيتم خصم مبلغ الشراء الجديد من رصيدك المتاح. في حالة إجراء عملية شراء ذات مبلغ أكبر من رصيد محفظة "متجر الهدية السهلة لتقنية المعلومات": إذا كان إجمالي قيمة مشترياتك الجديدة بما في ذلك رسوم الشحن أكثر من رصيد المحفظة المتاحة ، فستحتاج إلى اختيار الدفع عبر الإنترنت لدفع الفرق ، من أجل إكمال الشراء. وسيقوم النظام بعد ذلك بخصم المبلغ المتوفر من رصيد محفظة "متجر الهدية السهلة لتقنية المعلومات" الخاص بكم ، وسيتم خصم المبلغ المتبقي المستحق على الدفعة المختارة عبر الإنترنت.</p>
+                    <p><strong><u>تبديل البند بدلاً من استرداد قيمته</u></strong></p>
+                    <p>من الممكن استبدال العنصر التالف أو المعيب فقط ببند آخر ذو علامة تجارية جديدة من نفس النوع والسعر نفسه.</p>
+                    <p>إذا رغب المستخدم في استبدال العنصر بعلامـة تجارية أو طراز مختلف ، فيمكننا إضافة مبلـغ الاسترداد إلى رصيد المحفظـة للمستخدم ، وهو حر في أن يفعـل ما يريده بهذا المبلغ.</p>
+                    <p><strong><u>إعادة المل في حالة</u></strong><strong><u>إذا كان التغليف الأصلي مفتوحًا أو تالفًا</u></strong></p>
+                    <p>"متجر الهدية السهلة لتقنية المعلومات" يقبل إعادة السلعة فقط في حالة عدم وجودها في داخل العلبة الأصلية و / أو التعبئة والتغليف غير المفتوحة ، مع جميع الملصقات والرموز الشريطية عليها ، ولكن في هذه الحالة ، يرجى الاتصال بنا للحصول على مزيد من المعلومات.</p>
+                    <p><strong><u>قائمة بالسلع التي لايمكن إرتجاعها</u></strong></p>
+                    <p>لا يمكن إرجاع العناصر التالية أو استبدالها:</p>
+                    <ul>
+                        <li>الكيك<br /> ● الزهور<br /> ● الشيكولاته<br /> ● المواد المستهلكة<br /> ● الملابس الداخلية<br /> ● الملابس الداخلية<br /> ● الجوارب<br /><br /> بالنسبة للمنتجات المعيبة أو التالفة ، يرجى الاتصال بنا على رقم خدمة العملاء المذكور أدناه لترتيب استرداد السلعة أو استبدالها.</li>
+                    </ul>
+                    <p><strong><u>يرجى ملاحظة</u></strong><strong><u> ما يلي</u></strong></p>
+                    <ul>
+                        <li>سيتم فرض رسوم إعادة تعبئة وتجهيز بمبلغ 100 ريال سعودي على جميع السلع المرتجعة ، حيث سيتم اسقتطاعها بعد عملية رد الأموال.</li>
+                        <li>يعتبر بيع السلع عملية بيع نهائي ولا يمكن الرجوع فيه.</li>
+                    </ul>
+                    <p><strong><u>أسئلة</u></strong></p>
+                    <p>إذا كان لديك أي أسئلـة بخصوص سياسـة الإرتجاع الخاصـة بنا ، يرجى الاتصال بنا على:</p>
+                    <p><strong><u>اتصل بنا</u></strong></p>
+                    <p>من أجل حل شكوى بخصوص الموقع أو عروض السوق أو لتلقي مزيد من المعلومات بخصوص استخدام الموقع أو عروض السوق ، يرجى الاتصال بنا على:</p>
+                    <p>"متجر الهدية السهلة لتقنية المعلومات"<strong> Easy Gifts </strong></p>
+                    <p>رقم السجل التجاري: <strong>1010703592</strong></p>
+                    <p>شارع يوسف البزاز<br /> المزار الشمالي<br /> الرياض ، 12334<br /> المملكة العربية السعودية<br /> الهاتف: <strong>+966 11-4812228</strong><br /><a href="mailto:info@easygift.netالبريد">البريد</a> الالكتروني: <a href="mailto:info@easygift.net">info@easygift.net</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<a href="#home" class="scroll-to-top scroll-to-target js-scroll-trigger" id="scrollTop" data-target="html"><span class="fas fa-angle-up"></span></a>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scroll-nav.js"></script>
+<script src="js/slider.jquery.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/countup.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/platform.js"></script>
+<script>
+    /**
+ * Created by madlan on 8/17/2018.
+ */
+var $canvas
+function handlePreloader() {
+    if ($('.preloader').length) {
+        $('body').removeClass('active-preloader-ovh');
+        $('.preloader').fadeOut();
+    }
+}
+function appScreenshotCarousel() {
+    if ($('.appScreenshotCarousel-container').length) {
+
+        var swiper = new Swiper('.appScreenshotCarousel-container', {
+            autoplay: {
+                delay: 2000
+            },
+            effect: 'coverflow',
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 4,
+            initialSlide: 0,
+            keyboardControl: true,
+            mousewheelControl: false,
+            lazyLoading: true,
+            preventClicks: false,
+            preventClicksPropagation: false,
+            lazyLoadingInPrevNext: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 250,
+                modifier: .5,
+                slideShadows: false,
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+                991: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 26,
+                },
+                767: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 50,
+                },
+                575: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            }
+        });
+
+    }
+}
+function statsCounter(id, end) {
+
+    var numAnim = new CountUp(id, 0, end);
+    if (!numAnim.error) {
+        numAnim.start();
+    } else {
+        console.error(numAnim.error);
+    }
+}
+function scroll(multiplier) {
+    if ($("#toggleCarousel").hasClass("rtl")) {
+        if (multiplier == 1) {
+            $canvas.animate({left: 0});
+        } else if (multiplier == 2) {
+            $canvas.animate({left: 260});
+        } else if (multiplier == 3) {
+            $canvas.animate({left: 520});
+
+        }
+
+    } else {
+        if (multiplier == 1) {
+            $canvas.animate({left: 0});
+        } else if (multiplier == 2) {
+            $canvas.animate({left: -260});
+        } else if (multiplier == 3) {
+            $canvas.animate({left: -520});
+
+        }
+
+    }
+}
+$('.iphoneSliderNavigation').click(function () {
+    var multiplier = parseInt($(this).data("distance"));
+    if ($(".carousel"))
+        scroll(multiplier)
+
+});
+$(window).scroll(function () {
+    var wScroll = $(this).scrollTop();
+    $('#header_scatter').css({
+        'transform': 'translate(0px, ' + wScroll / 25 + '%)'
+    });
+    $('#header_iphone').css({
+        'transform': 'translate(0px, ' + wScroll / 15 + '%)'
+    });
+    $('.header_ribbon').css({
+        'transform': 'translate(0px, ' + wScroll / 5 + '%)'
+    });
+})
+
+$(function () {
+
+
+
+});
+
+
+$(document).ready(function () {
+    handlePreloader();
+    $("#mainNav").hide();
+    console.log(platform.os); // 'IE'
+    if (platform.os.family == "iOS") {
+        $("header .btn-download.active").attr("href", "https://itunes.apple.com/us/app/easygifts/id1330770578?ls=1&mt=8");
+    } else if (platform.os.family == "Android") {
+        $("header .btn-download.active").attr("href", "https://play.google.com/store/apps/details?id=com.easygift");
+    }
+    $canvas = $("div.canvas");
+    appScreenshotCarousel();
+    statsCounter("starsStat", 1834);
+    statsCounter("likesStat", 1940);
+    statsCounter("downloadStat", 1000);
+    statsCounter("usersStat", 9234);
+    // Optimalisation: Store the references outside the event handler:
+    var $window = $(window);
+    var $pane = $('#pane1');
+
+    var windowsize = $window.width();
+
+    function checkWidth() {
+        windowsize = $window.width();
+        if (windowsize < 768) {
+            $("#mainNav").slideDown();
+            $("#scrollTop").show();
+        } else {
+            if ($window.scrollTop() < 500) {
+                $("#mainNav").hide();
+                $("#scrollTop").hide();
+
+            }
+        }
+        console.log("window resize !")
+    }
+
+    // Execute on load
+    checkWidth();
+    // Bind event listener
+    $(window).resize(checkWidth);
+
+    $(window).scroll(function () {
+
+        if (windowsize > 768) {
+            // set distance user needs to scroll before we start fadeIn
+            if ($(this).scrollTop() > 500) {
+                $('#mainNav').slideDown();
+                $("#scrollTop").fadeIn();
+            } else {
+                $('#mainNav').fadeOut();
+                $("#scrollTop").fadeOut();
+            }
+        }
+    });
+
+
+    $('#featuresCarousel').slick({ //add in your correct containing element
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        nextArrow: '<button class="carousel-control-prev" > <img src="images/left-chevron.svg" width="25px" alt=""> <span class="sr-only">Previous</span></button>',
+        prevArrow: '<button class="carousel-control-next" style="z-index: 100"><img src="images/right-chevron.svg" width="25px" alt=""><span class="sr-only">Next</span></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+
+    });
+    /* show lightbox when clicking a thumbnail */
+    $('a.thumb').click(function (event) {
+        event.preventDefault();
+        var content = $('.modal-body');
+        content.empty();
+        var title = $(this).attr("title");
+        $('.modal-title').html(title);
+        content.html($(this).html());
+        $(".modal-profile").modal({show: true});
+    });
+    // hide .navbar first
+
+// Gets the video src from the data-src on each button
+
+    var $videoSrc;
+    $('#video_placeholder').click(function () {
+        $videoSrc = $(this).data("src");
+    });
+    console.log($videoSrc);
+
+
+// when the modal is opened autoplay it
+    $('#videoModal').on('shown.bs.modal', function (e) {
+
+// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+        $("#video").attr('src', $videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1");
+    })
+
+
+// stop playing the youtube video when I close the modal
+    $('#videoModal').on('hide.bs.modal', function (e) {
+        // a poor man's stop video
+        $("#video").attr('src', $videoSrc);
+    })
+    $("div[id^=art]").on("click", function (event) {
+        $(this).css("color", "#111");
+        $(this).siblings().css("color", "#656565");
+        $(this).addClass("selected");
+        $(this).siblings().removeClass("selected");
+    });
+});
+
+
+
+</script>
+
+</body>
+</html>
